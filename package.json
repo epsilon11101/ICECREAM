@@ -1,0 +1,23 @@
+{
+  "name": "icecream",
+  "version": "1.0.0",
+  "description": "goit final proyect",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass  sass:css --watch --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epsilon11101/ICECREAM.git"
+  },
+  "author": "developers team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epsilon11101/ICECREAM/issues"
+  },
+  "homepage": "https://github.com/epsilon11101/ICECREAM#readme",
+  "dependencies": {
+    "g": "^2.0.1",
+    "sass": "^1.54.9"
+  }
+}
