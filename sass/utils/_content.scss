@@ -1,0 +1,6 @@
+ @mixin justify($content) {
+    justify-content: $content;
+ }
+ @mixin align-items($align){
+    align-items: $align;
+ }
