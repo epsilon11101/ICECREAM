@@ -7,7 +7,6 @@ header{
         margin: 0px 56px;
         max-width: 100%;
         padding-top: 30px;
-        background-color: black;
         gap: 141px;
 
         & .nav-hero__logo{
@@ -20,8 +19,11 @@ header{
         }
 
         & .nav-hero__button{
+            & input{
             width: 159px;
             height: 44px;
+            border: 0px white;
+            }
             
         }
     }
