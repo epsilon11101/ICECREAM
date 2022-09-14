@@ -2,7 +2,6 @@ header{
     max-width: 1280px;
     min-height: 664px;
     background-color: $ice__primary-dark;
-
     & .nav-hero{
         margin: 0px 56px;
         max-width: 100%;
@@ -35,11 +34,65 @@ header{
             line-height: 20.83px;
             font-size: 16px;
 
-            & :hover{
-                
+            &:hover{
+                background-color: $ice_hover_button;
             }
             }
             
+        }
+    }
+
+    & .hero-body{
+        position: absolute;
+        max-width: 100%;
+        margin: 0px 56px;
+
+
+        & .hero-body__row{
+            position: relative;
+            left: 10px;
+            top: 74px;
+
+            & .hero-body__row__title{
+                max-width: 277px;
+                max-height: 137px;
+                text-align: left;
+
+                & p{
+                    letter-spacing: 0.04em;
+                    &:first-child{
+                        padding: 0px;
+                        font-size: 38px;
+                        line-height: 43.51px;
+                        color: $ice__white;
+                        text-align: left;
+                    }
+                    &:last-child{
+                        font-size:58px;
+                        line-height: 52.49px;
+                        
+                    }
+                    
+                }
+
+            }
+
+            & .hero-body__row_buttons{
+                max-width: 100%;
+                gap: 12px;
+                background-color: purple;
+                & .button-dark{
+                    width: 107px;
+                    height: 40px;
+                    border: none;
+                }
+
+                & .button-light{
+                    width: 138px;
+                    height: 40px;
+                    border: none;
+                }
+            }
         }
     }
 }
