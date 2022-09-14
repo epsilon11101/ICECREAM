@@ -25,6 +25,17 @@ a{
     margin-left: auto;
 }
 
+.button-light{
+    color: $ice__secundary;
+    background-color: $ice__white;
+    border-radius: 22px;
+}
+
+.button-dark{
+    color: $ice__white;
+    background-color: $ice__secundary;
+    border-radius: 22px;
+}
 
 
 .subtitle {
