@@ -1,1 +1,18 @@
-@import"https://fonts.googleapis.com/css2?family=Titan+One&display=swap";@import"https://fonts.googleapis.com/css2?family=DM+Sans&display=swap";.center,.center-column,.top,.right,.bottom,.left,.space,.bottom,.left-column{display:flex;justify-content:center;align-items:center}.left-column{align-items:flex-start}.left-column,.center-column{flex-direction:column}.top{align-items:flex-start}.right{justify-content:flex-end}.bottom{align-items:flex-end}.left-column,.left{justify-content:flex-start}.space{justify-content:space-around}.container{max-width:100%;padding-left:0px;padding-right:0px;margin-right:auto;margin-left:auto}.subtitle{font-family:"Titan One",cursive;font-weight:400;font-size:30px;line-height:34px;text-align:center;letter-spacing:.04em;color:#ffa5ba;margin:60px 0 16px 0}.title{font-family:"Titan One",cursive;font-weight:400;font-size:58px;line-height:66px;text-align:center;letter-spacing:.06em;color:#d41443;margin:0}/*# sourceMappingURL=main.css.map */
+/* Error: Undefined variable.
+ *   ,
+ * 5 |     font-family: $brand_font_family;
+ *   |                  ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass/components/_common.scss 5:18  @import
+ *   sass/main.scss 5:9                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      font-family: $brand_font_family;\a   \2502                   ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/components/_common.scss 5:18  @import\a   sass/main.scss 5:9                 root stylesheet";
+}

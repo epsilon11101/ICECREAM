@@ -1,3 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $brand_font_family;
+    color: map-get($brand_colors,'text-main-color');
+    background-color: map-get($brand_colors,'background-color');
+}
+
+a{
+    all:unset;
+    cursor:pointer;
+ }
+
+ ul,ol{
+    list-style: none;
+    margin:0; padding: 0; border:0;
+    cursor:pointer;
+}
+
 .container{
     max-width: 100%;
     padding-left: 0px;
@@ -5,6 +25,7 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 
 
 .subtitle {
