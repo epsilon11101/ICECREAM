@@ -67,3 +67,11 @@ a{
   color: $ice__secundary;
   margin: 0;
 }
+
+.effect-up{
+    transition: all 0.5s;
+    &:hover{
+        transform: translate(0px,-5px);
+    }
+}
+

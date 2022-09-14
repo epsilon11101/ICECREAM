@@ -92,9 +92,11 @@ header{
                 & .button-light{
                     width: 138px;
                     height: 40px;
+                    
 
                     &:hover{
                         background-color: $ice_hover_button;
+                        
                     }
                 }
             }
