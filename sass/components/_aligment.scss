@@ -6,7 +6,8 @@
  .left,
  .space,
  .bottom,
- .left-column{
+ .left-column,
+ .right-column{
     display: flex;
     @include justify(center);
     @include align-items(center);
@@ -16,6 +17,7 @@
     @include align-items(flex-start);
  }
 
+ .right-column,
 .left-column,
 .center-column{
     flex-direction: column;
@@ -29,6 +31,7 @@
     @include justify(flex-end);
 }
 
+.right-column,
 .bottom {
     @include align-items(flex-end);
 }
