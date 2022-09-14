@@ -23,6 +23,7 @@ a{
     padding-right: 0px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 
 .button-light,
@@ -31,6 +32,7 @@ a{
     font-family: $ice__paragraph_font;
     text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 .button-light{
