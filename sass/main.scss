@@ -1,0 +1,14 @@
+@import './utils/brand_color';
+@import './utils/font_family';
+@import './utils/content';
+@import './components/aligment';
+
+
+.box{
+    border: 1px black solid;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+
