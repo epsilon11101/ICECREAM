@@ -16,12 +16,14 @@ a{
     cursor:pointer;
 }
 
+
 .container{
     max-width: 100%;
     padding-left: 0px;
     padding-right: 0px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 
 .button-light,
@@ -30,6 +32,7 @@ a{
     font-family: $ice__paragraph_font;
     text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 .button-light{
@@ -64,3 +67,11 @@ a{
   color: $ice__secundary;
   margin: 0;
 }
+
+.effect-up{
+    transition: all 0.5s;
+    &:hover{
+        transform: translate(0px,-5px);
+    }
+}
+
