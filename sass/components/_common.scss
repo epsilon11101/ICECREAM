@@ -68,7 +68,7 @@ a{
   margin: 0;
 }
 
-.effect-up{
+.effect-up { 
     transition: all 0.5s;
     &:hover{
         transform: translate(0px,-5px);
