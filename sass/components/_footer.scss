@@ -1,0 +1,143 @@
+footer {
+  max-width: 1200px;
+  min-height: 877px;
+  background: $ice__primary-ligh;
+
+  & ul {
+    & li:nth-child(2) {
+      & p:nth-child(1) {
+        background: $ice__green-pistachio;
+        width: 138px;
+      }
+    }
+  }
+
+  & .location__card {
+    font-family: $ice__paragraph_font;
+    width: 368px;
+    height: 538px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background: $ice__white;
+    padding: 40px;
+
+    & p {
+      font-size: 16px;
+      text-align: left;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+
+      &:nth-child(1) {
+        background: $ice__gold-yellow;
+        border-radius: 6px;
+        width: 75.1px;
+        height: 28px;
+      }
+
+      &:nth-child(4) {
+        width: 288px;
+        height: 0px;
+      }
+    }
+  }
+
+  & .location__button {
+    padding-top: 60px;
+    max-width: 100%;
+    gap: 12px;
+    line-height: 21px;
+    font-style: normal;
+
+    & .button-dark {
+      width: 198px;
+      height: 44px;
+    }
+
+    & .button-light {
+      width: 168px;
+      height: 44px;
+    }
+  }
+
+  & .footerbody {
+    gap: 300px;
+    padding-top: 121px;
+    & .footerbody_text {
+      & p {
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: uppercase;
+        &:first-child {
+          font-style: normal;
+          line-height: 34px;
+          letter-spacing: 0.04em;
+          color: $ice__primary-dark;
+        }
+
+        &:last-child {
+          width: 480px;
+          height: 66px;
+          font-size: 58px;
+          line-height: 66px;
+          letter-spacing: 0.06em;
+        }
+      }
+    }
+  }
+
+  & .footerbody__network {
+    width: 232;
+    & .footerbody__contact {
+      padding-top: 20px;
+      & span {
+        width: 268px;
+        height: 26px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 186%;
+        text-align: right;
+        &:first-child {
+          color: $ice_black;
+        }
+        &:last-child {
+          color: $ice__primary-dark;
+        }
+      }
+    }
+  }
+
+  & .footerbotton {
+    & p {
+      &:first-child {
+        border: 1px solid #e1e1e1;
+        width: 1167px;
+        height: 0px;
+      }
+      &:last-child {
+        color: $ice_gray;
+      }
+    }
+  }
+}
+
+.location__card-ice_black {
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: $ice_black;
+}
+
+.location__card-ice_gray {
+  color: $ice_gray;
+  line-height: 183%;
+}
+
+.location__card-ice__primary-dark {
+  color: $ice__primary-dark;
+  line-height: 186%;
+}
+
+.location__card-line {
+  width: 288px;
+  height: 0px;
+  border: 1px solid #e1e1e1;
+}
