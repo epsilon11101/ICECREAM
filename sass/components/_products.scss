@@ -32,7 +32,7 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.04em;
-    margin: 165px 0 32px;
+    margin: 165px 0 30px;
   }
 
   &__description {
@@ -42,6 +42,11 @@
     line-height: 176%;
     letter-spacing: 0.04em;
     width: 241px;
+    height: 106px;
     margin: 32px auto 60px;
+  }
+  &__arrow{
+    width: 40px;
+    height: 40px;
   }
 }
