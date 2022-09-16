@@ -1,0 +1,188 @@
+header{
+    max-width: 1280px;
+    min-height: 664px;
+    background-color: $ice__primary;
+    & .nav-hero{
+        margin: 0px 56px;
+        max-width: 100%;
+        padding-top: 30px;
+        gap: 130px;
+        
+
+        & .nav-hero__logo{
+        }
+        
+        & .nav-hero__items{
+            z-index: 1;
+            & ul{
+                gap: 35px;
+                font-family: $ice__paragraph_font;
+                font-weight: 700;
+                & li:hover{
+                    color: $ice__secundary;
+                    
+                }
+            }
+
+        }
+
+        & .nav-hero__button{
+            & input{
+            width: 159px;
+            height: 44px;
+            font-weight: 700;
+            line-height: 20.83px;
+            font-size: 16px;
+
+            &:hover{
+                background-color: $ice_hover_button;
+            }
+            }
+            
+        }
+    }
+
+    & .hero-body{
+        min-width: 100%;
+        position: relative;
+        
+        & .hero-body__row{
+            width: 31%;
+            position: absolute;
+            left: 10px;
+            top: 74px;
+            margin: 0px 56px;
+            & .hero-body__row__title{
+                max-width: 277px;
+                max-height: 137px;
+                text-align: left;
+
+                & p{
+                    letter-spacing: 0.04em;
+                    &:first-child{
+                        padding: 0px;
+                        font-size: 38px;
+                        line-height: 43.51px;
+                        color: $ice__white;
+                        text-align: left;
+                    }
+                    &:last-child{
+                        font-size:58px;
+                        line-height: 52.49px;
+                        
+                    }
+                    
+                }
+
+            }
+
+            & .hero-body__row_buttons{
+                max-width: 100%;
+                gap: 12px;
+                margin-top: 24px;
+                font-size: 14px;
+                line-height: 18px;
+                font-style: normal;
+                
+                & .button-dark{
+                    width: 107px;
+                    height: 40px;
+                }
+
+                & .button-light{
+                    width: 138px;
+                    height: 40px;
+                    
+
+                    &:hover{
+                        background-color: $ice_hover_button;
+                        
+                    }
+                }
+            }
+
+            & .hero-body__row_promotional{
+
+                max-width: 100%;
+                margin-top: 40px;
+                & .hero-body__row_promotional_text{
+                    max-width: 200px;
+                    & > div{
+                        line-height: 140%;
+                    }
+
+                    & .hero-body__row_promotional_text_button{
+                        min-width: 26px;
+                        min-height: 26px;
+                        background: url('../../images/svg/arrow.svg') no-repeat  center/cover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        & .hero-body__row_right{
+            width: 31%;
+            position: absolute;
+            top: -30px;
+            left: 517px;
+            z-index: 0;
+            & .hero-body__row_right_bg{
+                min-width: 534px;
+                min-height: 534px;
+                background:url('../../images/header/ellipse.svg') center;
+            }
+            & .hero-body__row_right_bg_ice{
+                position: absolute;
+                top: 57px;
+                left: 150px;
+                min-width: 236px;
+                min-height: 557px;
+                background: url('../../images/header/icecream.webp') no-repeat center;
+            }
+            & .hero-body__row_right_bg_girl{
+                position: absolute;
+                min-width: 304px;
+                min-height: 241px;
+                top: 69.9%;
+                left:100%;
+                background: url('../../images/header/woman.webp') no-repeat center;
+            }
+            & .hero-body__row_right_text{
+                position: absolute;
+                top: 21%;
+                left: 152%;
+                z-index: 0;
+                gap: 0px;
+                &::before{
+                    position: absolute;
+                    top: 0;
+                    left: 70%;
+                    z-index: -1;
+                    content: url('../../images/svg/circle.png');
+                }
+                &p:first-child{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 46px;
+                    line-height: 53px;
+                    letter-spacing: 0.04em;
+                }
+                &p:last-child{
+                    font-family: $ice__paragraph_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            & .hero-body__row_right_text:last-child{
+                top: 45%;
+                &p:first-child{
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+}
