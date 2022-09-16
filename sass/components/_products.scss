@@ -11,19 +11,32 @@
     background-color: $ice__primary;
     margin: 281px 16px 60px;
     position: relative;
+
+    &:hover {
+      box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.12);
+      background-color: rgb(211, 145, 161);
+    }
   }
   &__item--coffee {
     background-color: $ice__gold-yellow;
+
+    &:hover {
+      background-color: rgb(230, 201, 162);
+    }
   }
 
   &__item--green {
     background-color: $ice__green-pistachio;
+    &:hover {
+      background-color: rgb(179, 209, 140);
+    }
   }
 
   &__image {
     position: absolute;
     right: 0%;
     bottom: 75%;
+    overflow: hidden;
   }
 
   &__title {
@@ -45,8 +58,45 @@
     height: 106px;
     margin: 32px auto 60px;
   }
-  &__arrow{
+  &__arrow {
     width: 40px;
     height: 40px;
+    cursor: pointer;
+  }
+
+  &__item:hover &__arrow {
+    transform: rotate(-90deg);
+  }
+
+  &__animation{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  &__detaildescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 368px;
+    height: 535px;
+    font-weight: 800;
+    font-size: 25px;
+    background: rgba(255, 184, 202, 0.8);
+    border-radius: 24px;
+    color: $ice__secundary;
+    display: none;
+  }
+&__detaildescription--coffee{
+  background-color: rgba(240, 209, 165, 0.8);
+}
+&__detaildescription--green{
+  background-color: rgba(194, 226, 151, 0.8);
+}
+
+  &__animation:active > &__detaildescription{
+    display:flex;
   }
 }
+
