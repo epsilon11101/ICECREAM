@@ -36,13 +36,12 @@
     position: absolute;
     right: 0%;
     bottom: 75%;
-    overflow: hidden;
   }
 
   &__title {
     font-family: $ice__main_font;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 23px;
     letter-spacing: 0.04em;
     margin: 165px 0 30px;
@@ -68,7 +67,7 @@
     transform: rotate(-90deg);
   }
 
-  &__animation{
+  &__animation {
     width: 40px;
     height: 40px;
     margin: auto;
@@ -88,15 +87,93 @@
     color: $ice__secundary;
     display: none;
   }
-&__detaildescription--coffee{
-  background-color: rgba(240, 209, 165, 0.8);
-}
-&__detaildescription--green{
-  background-color: rgba(194, 226, 151, 0.8);
-}
+  &__detaildescription--coffee {
+    background-color: rgba(240, 209, 165, 0.8);
+  }
+  &__detaildescription--green {
+    background-color: rgba(194, 226, 151, 0.8);
+  }
 
-  &__animation:active > &__detaildescription{
-    display:flex;
+  &__animation:active > &__detaildescription {
+    display: flex;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .products {
+    &__item {
+      height: 473px;
+      width: 224px;
+      margin: 158px 32px 60px;
+    }
+
+    &__image {
+      position: absolute;
+      right: 0%;
+      bottom: 75%;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 22.9 px;
+      margin: 118px 0 30px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 24.64px;
+      width: 160px;
+      height: 150px;
+      margin: 32px auto 32px;
+      overflow: hidden;
+    }
+
+    &__detaildescription {
+      width: 224px;
+      height: 473px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      height: 489px;
+      width: 280px;
+      margin: 148px 20px 0px;
+    }
+
+    &__image {
+      position: absolute;
+      right: 0%;
+      bottom: 70%;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 22.9 px;
+      margin: 160px 0 30px;
+    }
+
+    &__description {
+      line-height: 21.28px;
+      width: 200px;
+      height: 124px;
+      margin: 32px auto 40px;
+      overflow: hidden;
+    }
+
+    &__detaildescription {
+      width: 280px;
+      height: 489px;
+      font-size: 20px;
+    }
+  }
+}
