@@ -3,6 +3,7 @@ header{
     min-height: 664px;
     background-color: $ice__primary;
     & .nav-hero{
+        display: flex;
         margin: 0px 56px;
         max-width: 100%;
         padding-top: 30px;
@@ -126,7 +127,7 @@ header{
             & .hero-body__row_right_bg{
                 min-width: 534px;
                 min-height: 534px;
-                background:url('../../images/header/ellipse.svg') center;
+                background:url('../../images/header/ellipse.svg') no-repeat center;
             }
             & .hero-body__row_right_bg_ice{
                 position: absolute;
@@ -181,4 +182,176 @@ header{
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    header{
+        
+        
+        max-height: 50%;
+        & .nav-hero{
+            display: none;
+
+        }
+    & .hero-body{
+        min-width: 100%;
+        position: relative;
+        
+        & .hero-body__row{
+            & .hero-body__row__title{
+                max-width: 20vw;
+                max-height: 10vw;
+                text-align: left;
+
+                & p{
+                    letter-spacing: 0.041vw;
+                    
+                    &:first-child{
+                        font-size: 2.5vw;
+                        line-height: 25.19px;
+                        padding-bottom: 1vw
+                    }
+                    &:last-child{
+                        font-size:5vw;
+                        line-height: 30.77px;
+                        
+                    }
+                    
+                }
+
+            }
+
+            & .hero-body__row_buttons{
+                max-width: 100%;
+                gap: 12px;
+                margin-top: 20px;
+                line-height: 10px;
+                font-style: normal;
+
+                & .button-dark,
+                & .button-light{
+                    font-size: 1.2vw;
+                    max-height: 4vw;
+                }
+
+                & .button-dark{
+                    max-width: 10vw; 
+                       
+                }
+
+                & .button-light{
+                    max-width: 12vw;
+
+                    &:hover{
+                        background-color: $ice_hover_button;
+                        
+                    }
+                }
+            }
+
+            & .hero-body__row_promotional{
+
+                max-width: 100%;
+                margin-top: 40px;
+                & img{
+                    max-width: 152px;
+                    max-height: 154px;
+                }
+                & .hero-body__row_promotional_text{
+                    max-width: 114px;
+                    & > div{
+                        font-weight: 400;
+                        font-size: 8px;
+                        line-height: 150%;
+                    }
+
+                    & .hero-body__row_promotional_text_button{
+                        min-width: 18px;
+                        min-height: 18px;
+                        background: url('../../images/svg/arrow.svg') no-repeat  center/cover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        & .hero-body__row_right{
+            max-width: 100%;
+            position: relative;
+            top: -5vw;
+            left: 44vw;
+            background-color: red;
+            & .hero-body__row_right_bg{
+               
+                max-width: 368px;
+                max-height: 368px;
+                background-repeat: no-repeat;
+                background-size: 368px 368px ;
+            }
+            & .hero-body__row_right_bg_ice{
+                top:12vw;
+                left: 9vw;
+                min-width: 144px;
+                min-height: 336px;
+                background-repeat: no-repeat;
+                background-size: 144px 336px ;
+            }
+            & .hero-body__row_right_bg_girl{
+                position: absolute;
+                min-width: 190px;
+                min-height: 150px;
+                background-size: 190px 150px ;
+                top: 23vh;
+                left:39vh;
+                
+                
+            }
+            & .hero-body__row_right_text{
+                position: absolute;
+                top: 21%;
+                left: 152%;
+                z-index: 0;
+                gap: 0px;
+                &::before{
+                    position: absolute;
+                    top: 0;
+                    left: 70%;
+                    z-index: -1;
+                    content: url('../../images/svg/circle.png');
+                }
+                &p:first-child{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 46px;
+                    line-height: 53px;
+                    letter-spacing: 0.04em;
+                }
+                &p:last-child{
+                    font-family: $ice__paragraph_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            & .hero-body__row_right_text:last-child{
+                top: 45%;
+                &p:first-child{
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    header{
+        & .nav-hero{
+            display: none;
+        }
+
+    }
+
 }
