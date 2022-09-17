@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -19,35 +20,41 @@ a{
     cursor:pointer;
 }
 
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
 
-.container{
-    max-width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    
+.container {
+  max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button-light,
-.button-dark{
-    border-radius: 22px;
-    font-family: $ice__paragraph_font;
-    text-align: center;
-    border: none;
-    cursor: pointer;
+.button-dark {
+  border-radius: 22px;
+  font-family: $ice__paragraph_font;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
-.button-light{
-    color: $ice__secundary;
-    background-color: $ice__white;
+.button-light {
+  color: $ice__secundary;
+  background-color: $ice__white;
 }
 
-.button-dark{
-    color: $ice__white;
-    background-color: $ice__secundary;
+.button-dark {
+  color: $ice__white;
+  background-color: $ice__secundary;
 }
-
 
 .subtitle {
   font-family: $ice__main_font;
@@ -58,6 +65,13 @@ a{
   letter-spacing: 0.04em;
   color: $ice__primary-dark;
   margin: 60px 0 16px 0;
+  transition-property: letter-spacing;
+  transition-duration: 1500ms;
+
+
+  &:hover {
+    letter-spacing: 10px;
+  }
 }
 
 .title {
@@ -69,12 +83,43 @@ a{
   letter-spacing: 0.06em;
   color: $ice__secundary;
   margin: 0;
+  transition-property: letter-spacing;
+  transition-duration: 1500ms;
+
+  &:hover {
+    letter-spacing: 20px;
+  }
 }
 
-.effect-up { 
-    transition: all 0.5s;
-    &:hover{
-        transform: translate(0px,-5px);
-    }
+.effect-up {
+  transition: all 0.5s;
+  &:hover {
+    transform: translate(0px, -5px);
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .subtitle {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+  .title {
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+  }
+}
