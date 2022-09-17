@@ -186,9 +186,7 @@ header{
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     header{
-        
-        
-        max-height: 50%;
+        min-height: 416px;
         & .nav-hero{
             display: none;
 
@@ -280,7 +278,6 @@ header{
             position: relative;
             top: -5vw;
             left: 44vw;
-            background-color: red;
             & .hero-body__row_right_bg{
                
                 max-width: 368px;
@@ -301,7 +298,7 @@ header{
                 min-width: 190px;
                 min-height: 150px;
                 background-size: 190px 150px ;
-                top: 23vh;
+                top: 28vh;
                 left:39vh;
                 
                 
