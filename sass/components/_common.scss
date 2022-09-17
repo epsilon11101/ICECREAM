@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: $ice__white;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   -webkit-box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+    color: $ice__white;
 }
 
-a {
-  all: unset;
-  cursor: pointer;
+
+a{
+    all:unset;
+    cursor:pointer;
+ }
+
+ ul,ol{
+    list-style: none;
+    margin:0; padding: 0; border:0;
+    cursor:pointer;
 }
 
 ul,
