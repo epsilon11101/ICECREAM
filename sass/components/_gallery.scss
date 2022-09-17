@@ -1,48 +1,137 @@
-.collage {
+.tc-container{
+    position: relative;
+    min-height: 1030px;
+& .collage {
+    position: absolute;
+    top: -17%;
     padding-top: 50px;
     padding-bottom: 40px;
-}
-.collage__container {
-    width: 1020px;
-    height: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-}
+    & .collage__container {
+        width: 1020px;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+            & .collage__divide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
 
-.collage__divide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-
-    &--bottom {
-        margin-bottom: 20px;
-    }
-}
-
-.collage__image {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    transition: transform 200ms ease-out, box-shadow 200ms ease-out;
-    &:hover {
-        transform: scale(1.2);
-        box-shadow: 0px 0px 12px 2px $ice__secundary;
+        &--bottom {
+            margin-bottom: 20px;
         }
-    &--bottom {
-        margin-bottom: 10px;
+        & .collage__image {
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0px 0px 12px 2px $ice__secundary;
+                }
+            &--bottom {
+                margin-bottom: 10px;
+            }
+            &--top_one{
+                margin-top: 50px;
+            }
+            &--top_two{
+                margin-top: 60px;
+            }
+            &--top_three{
+                margin-top: -45px;
+            }
+        }
     }
-    &--top_one{
-        margin-top: 50px;
     }
-    &--top_two{
-        margin-top: 60px;
-    }
-    &--top_three{
-        margin-top: -45px;
-    }
+
+
+
+
 }
+
+& .testimonial-carousel{
+    
+    margin-bottom: 119px;
+    position: absolute;
+    top: 439px;
+
+    & .testimonial{
+        gap: 16px;
+        & .testimonial__image{
+            min-width: 85px;
+            min-height: 85px;
+            border-radius: 44px;
+            object-fit: cover;
+        }
+        & .testimonial__container{
+            min-width: 968px;
+            min-height: 138px;
+            background-color: $ice_dark_white;
+
+            & .testimonial__container__text{
+                font-family: $ice__paragraph_font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 186%;
+                letter-spacing: 0.04em;
+                max-width: 750px;
+                max-height: 52px;
+                color: $ice_black;
+                text-align: center;
+                & p:before{
+                    content: url('../../images/testimonials/comilla.svg');
+
+                }
+                &  p {
+                    text-decoration: underline 1px solid $ice_light_gray_space;
+                    text-underline-offset: 10px;
+                }
+            }
+        }
+
+        & .testimonial__name{
+            & .testimonial__name__circle{
+                gap: 10px;
+                    & .circle{
+                        min-width: 4px;
+                        min-height: 4px;
+                        border-radius: 50%;
+                        background-color: $ice__secundary;
+                    }
+                }
+            & .testimonial__name__user{
+                font-family: $ice__paragraph_font;
+                color: $ice_black;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 186%;
+                text-align: center;
+            }
+        }
+
+
+
+    }
+
+    & .testimonial-carousel-control{
+        gap: 18px;
+        cursor: pointer;
+        & .fa-house{
+            color: $ice__secundary;
+        }
+        & .fa-circle{
+            color: $ice_light_gray;
+        }
+    }
+
+}
+
+}
+
+

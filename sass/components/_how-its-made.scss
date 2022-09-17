@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 .made-section {
-  position: absolute;
   height: 1229px;
   left: 0px;
   top: 1717px;
@@ -52,9 +51,7 @@
 }
 
 .made-section__background-milk {
-  height: 521px;
-  left: 0px;
-  top: 1953px;
+  min-width: 100%;
   background-image: url(../images/how_its_made/milk.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,8 +148,7 @@
 }
 
 .made-section__group-icons {
-  display: flex;
-  justify-content: space-between;
+
   align-items: baseline;
 }
 
@@ -292,3 +288,5 @@
     color: $ice_black;
   }
 }
+
+
