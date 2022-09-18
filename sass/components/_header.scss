@@ -38,6 +38,9 @@ header{
             
         }
     }
+    & .nav-mobile-hero{
+        display: none;
+    }
 
     & .hero-body{
         min-width: 100%;
@@ -182,20 +185,26 @@ header{
             }
         }
     }
+
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     header{
-        min-height: 416px;
+        z-index: -1;
+            min-height: 416px ;
         & .nav-hero{
             display: none;
 
         }
     & .hero-body{
+        
         min-width: 100%;
         position: relative;
         
         & .hero-body__row{
+            top: 18px;
             & .hero-body__row__title{
                 max-width: 20vw;
                 max-height: 10vw;
@@ -250,13 +259,14 @@ header{
             & .hero-body__row_promotional{
 
                 max-width: 100%;
-                margin-top: 40px;
+                margin-top: 16px;
                 & img{
                     max-width: 152px;
                     max-height: 154px;
                 }
                 & .hero-body__row_promotional_text{
                     max-width: 114px;
+                    z-index: 1;
                     & > div{
                         font-weight: 400;
                         font-size: 8px;
@@ -268,26 +278,32 @@ header{
                         min-height: 18px;
                         background: url('../../images/svg/arrow.svg') no-repeat  center/cover;
                         cursor: pointer;
+
                     }
                 }
             }
         }
 
         & .hero-body__row_right{
+            
             max-width: 100%;
-            position: relative;
-            top: -5vw;
-            left: 44vw;
+            min-height: 419px;
+            position: absolute;
+            top: -7vw;
+            left: 42vw;
+            z-index: 0;
             & .hero-body__row_right_bg{
-               
-                max-width: 368px;
-                max-height: 368px;
-                background-repeat: no-repeat;
+                
+                box-sizing: border-box;
+                min-height: 368px;
+                min-width: 368px;
+                background:url('../../images/header/ellipse.svg') no-repeat center;
+                z-index: inherit;
                 background-size: 368px 368px ;
             }
             & .hero-body__row_right_bg_ice{
-                top:12vw;
-                left: 9vw;
+                top:8vw;
+                left: 10vw;
                 min-width: 144px;
                 min-height: 336px;
                 background-repeat: no-repeat;
@@ -298,47 +314,133 @@ header{
                 min-width: 190px;
                 min-height: 150px;
                 background-size: 190px 150px ;
-                top: 28vh;
+                top: 8vh;
                 left:39vh;
                 
                 
             }
             & .hero-body__row_right_text{
                 position: absolute;
-                top: 21%;
+
+                top: 15%;
                 left: 152%;
                 z-index: 0;
                 gap: 0px;
                 &::before{
                     position: absolute;
-                    top: 0;
+                    top: 14%;
                     left: 70%;
                     z-index: -1;
-                    content: url('../../images/svg/circle.png');
+                    content: url('../../images/header/Ellipse\ 1.svg');
+
                 }
-                &p:first-child{
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 46px;
-                    line-height: 53px;
-                    letter-spacing: 0.04em;
+                
+                & .title{
+                    font-size: 28px;
                 }
-                &p:last-child{
-                    font-family: $ice__paragraph_font;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 18px;
+                & p{
+                    font-size: 8px;
                 }
+
+            
             }
 
             & .hero-body__row_right_text:last-child{
-                top: 45%;
+                top: 37%;
                 &p:first-child{
                     font-size: 43px;
                 }
             }
         }
+    }
+
+    & .nav-mobile-hero{
+        z-index: 2;
+        display: flex;
+        margin: 0px 54px;
+        max-width: 100%;
+        padding-top: 18px;
+        gap: 61vw;
+        box-sizing: border-box;
+
+        & .nav-mobile-bars-menu{
+            cursor: pointer;
+            font-size: 25px;
+            z-index: 1;
+        }
+
+        & .fa-bars{
+            color: $ice__secundary;
+            
+        }
+        & .nav-mobile-hero__menu{
+            
+            gap: 32px;
+            & .nav-mobile-hero__menu__button{
+                & input{
+                    min-width: 160px;
+                    min-height: 44px;
+                    font-weight: 700;
+                    line-height: 20.83px;
+                    font-size: 16px;
+
+                    &:hover{
+                        background-color: $ice_hover_button;
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .mobile-menu{ 
+        
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 80%;
+        min-width: 254px;
+        min-height: 100%;
+        background-color: #E17992;
+        & .fa-xmark{
+            position: absolute;
+            top: 1%;
+            left: 90%;
+            cursor: pointer;
+        }
+        & ul{
+            position: relative;
+            gap: 22px;
+            font-family: $ice__paragraph_font;
+            color: $ice__white;
+            font-weight: 700;
+            font-size: 14px;
+            min-width: 100%;
+            & li{
+                cursor: pointer;
+                padding-left: 20px;
+                &:hover{
+                    color: $ice__secundary;
+                }
+            }
+        }
+        & .mobile-menu__button{
+            margin-top: 22px;
+            min-width: 225px;
+            
+            & input{
+                min-width: 160px;
+                min-height: 44px;
+                font-weight: 700;
+                line-height: 20.83px;
+                font-size: 16px;
+
+                &:hover{
+                    background-color: $ice_hover_button;
+                    }
+                }
+        }
+
     }
     }
 }
@@ -352,3 +454,7 @@ header{
     }
 
 }
+
+.hide-menu{
+        display: none;
+    }

@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onload="my_onload()">
   <!-- HEADER -->
 
   <!-- NAV -->
@@ -34,9 +34,52 @@
         <input type="button" class="button-light effect-up" value="Buy now >" />
       </div>
     </nav>
+    <!-- NAV-MOBILE -->
+    <nav class="left  nav-mobile-hero">
+
+      <div class="nav-mobile-hero__logo left">
+        <img src="./images/nav/logo.svg" alt="" />
+      </div>
+
+      <div class="center nav-mobile-hero__menu">
+        <div class="nav-mobile-bars-menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+
+        <div class="nav-mobile-hero__menu__button">
+          <input type="button" class="button-light effect-up" value="Buy now >" />
+        </div>
+      </div>
+
+
+    </nav>
+
+    <div class="mobile-menu hide-menu">
+
+      <ul class="left-column">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <li class="effect-up center">
+          <div class="mobile-menu__button center">
+            <input type="button" class="button-light effect-up" value="Buy now >" />
+          </div>
+        </li>
+        <li class="effect-up"><a href="#"></a>Home</li>
+        <li class="effect-up"><a href=""></a>About us</li>
+        <li class="effect-up"><a href=""></a>How it's made</li>
+        <li class="effect-up"><a href=""></a>Our products</li>
+        <li class="effect-up"><a href=""></a>Contact</li>
+
+      </ul>
+
+    </div>
+
+
+
+
+
 
     <div class="hero-body container left">
-      <div class="hero-body__row">
+      <div class="hero-body__row left-column">
         <div class="hero-body__row__title left-column">
           <p class="title">ICE CREAM MADE WITH</p>
           <p class="title">PASSION</p>
@@ -81,7 +124,8 @@
       </div>
     </div>
   </header>
-  <!-- NAV-MOBILE -->
+
+
 
   <!-- PRODUCTS SECTION -->
   <section class="container">
@@ -152,7 +196,7 @@
 
 
   <!-- HOW ITS MADE SECTION -->
-  <section class="container made-section center-column">
+  <!-- <section class="container made-section center-column">
     <h3>tradition and love</h3>
     <h2>how it’s made?</h2>
     <div class="made-section__background-milk ">
@@ -203,11 +247,11 @@
 
     </div>
 
-  </section>
+  </section> -->
 
   <!-- COLLAGE SECTION -->
   <!-- TESTIMONIAL SECTION -->
-  <section class="container center-column tc-container">
+  <!-- <section class="container center-column tc-container">
     <div class="center collage ">
       <div class="collage__container">
 
@@ -300,11 +344,11 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- FOOTER SECTION -->
   <!-- LOCATION SECTION -->
-  <footer class="container center-column">
+  <!-- <footer class="container center-column">
     <div class="location container">
       <div class="location-container-cards">
         <ul class="center location-cards">
@@ -446,9 +490,10 @@
       </div>
     </div>
 
-  </footer>
+  </footer> -->
 
   <script src="./scripts/responsive.js"></script>
+  <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
