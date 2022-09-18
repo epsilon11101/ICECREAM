@@ -180,3 +180,55 @@
 }
 }
 
+@media screen and (max-width: 767px) {
+.tc-container{
+    position: relative;
+    
+    gap: 1000px;
+
+    & .collage{
+        position: absolute;
+        top: -17%;
+        width: 100%;
+        
+
+    & .collage__container {
+        max-width: 100%;
+
+         & .collage__divide {
+
+
+            & .collage__image {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+
+
+            }
+        & .c5{
+            width: 80%;
+        }
+    }
+    }
+
+
+    }
+
+    & .testimonial-carousel{
+        margin-top: 10px;
+        top: 285px;
+
+        & .testimonial__container{
+            max-width: 100%;
+            min-height: 308px !important;
+
+                & .testimonial__container__text{
+                max-width: 157px;
+                min-height: 239px;
+
+            }
+        }
+    }
+}
+}
