@@ -56,30 +56,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  gap: 99px;
 }
+
 
 .made-section__background-milk {
   > img {
     width: 501px;
     height: 501px;
-    margin-top: 60px;
-    margin-left: 16px;
-    margin-right: 683px;
-    margin-bottom: 60px;
-    left: 16px;
-    top: 1953px;
   }
+}
+.made-section__main_text {
+  gap:30px;
+  max-width:463px;
 }
 
 .made-section__tex-black {
   width: 463px;
-  height: 79px;
-  left: 616px;
-  top: 2043px;
-  margin-top: 90px;
-  margin-left: 99px;
-  margin-right: 121px;
-  margin-bottom: 32px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -92,13 +85,6 @@
 
 .made-section__tex-grays {
   width: 463px;
-  height: 155px;
-  left: 616px;
-  top: 2154px;
-  margin-top: 32px;
-  margin-left: 99px;
-  margin-right: 121px;
-  margin-bottom: 40px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -111,34 +97,22 @@
 .made-section__button-read {
   width: 176px;
   height: 44px;
-  left: 616px;
-  top: 2349px;
-  margin-left: 99px;
-  margin-right: 408px;
-  margin-bottom: 81px;
   background: $ice__white;
   border-radius: 22px;
   border: none;
 }
 
 .made-section__button-read {
-  > span {
+  & span {
     width: 83px;
     height: 44px;
-    left: 653px;
-    top: 2349px;
-    margin-left: 37px;
-    margin-right: 56px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: $ice__secundary;
-    display: flex;
+    padding: 10px auto;
   }
 }
 .made-section__button-read {
@@ -156,25 +130,18 @@
   > img {
     width: 50px;
     height: 50px;
-    margin-top: 40px;
-    margin-left: 7px;
-    margin-right: 359px;
   }
 }
 .made-section__icon-apples {
   > img {
     width: 50px;
     height: 50px;
-    margin-top: 40px;
-    margin-right: 350px;
   }
 }
 .made-section__icon-heart {
   > img {
     width: 44px;
     height: 50px;
-    margin-top: 40px;
-    margin-right: 340px;
   }
 }
 
@@ -182,12 +149,6 @@
   > h2 {
     width: 98px;
     height: 65px;
-    left: 16px;
-    top: 2604px;
-    margin-left: 16px;
-    margin-bottom: 40px;
-    margin-right: 305px;
-    margin-bottom: 16px;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -203,10 +164,6 @@
   > h2 {
     width: 147px;
     height: 65px;
-    left: 419px;
-    top: 2604px;
-    margin-right: 250px;
-    margin-bottom: 16px;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -221,10 +178,6 @@
   > h2 {
     width: 77px;
     height: 65px;
-    left: 816px;
-    top: 2604px;
-    margin-right: 307px;
-    margin-bottom: 16px;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -240,11 +193,6 @@
   > div {
     width: 288px;
     height: 52px;
-    left: 16px;
-    top: 2685px;
-    margin-left: 16px;
-    margin-bottom: 209px;
-    margin-right: 115px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
@@ -258,10 +206,6 @@
   > div {
     width: 317px;
     height: 52px;
-    left: 419px;
-    top: 2685px;
-    margin-bottom: 209px;
-    margin-right: 80px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
@@ -275,10 +219,6 @@
   > div {
     width: 288px;
     height: 52px;
-    left: 816px;
-    top: 2685px;
-    margin-bottom: 209px;
-    margin-right: 96px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
@@ -287,6 +227,156 @@
     letter-spacing: 0.02em;
     color: $ice_black;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .made-section {
+  height: 1092px;
+  left: 0px;
+  top: 1717px;
+  background: $ice__primary-ligh;
+}
+
+
+.made-section__background-milk {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  background-image: none;
+  display: flex;
+  gap: 100px;
+}
+.made-section__background-milk {
+  & img {
+    max-width: 336px !important;
+    max-height: 335px !important;
+  }
+}
+.made-section__main_text {
+  gap:35px;
+  max-width:334px;
+}
+.made-section__tex-black {
+  width: 100%;
+  max-height: 79px;
+  font-size: 14px;
+
+}
+
+.made-section__tex-grays {
+  width: 100%;
+  font-size: 14px;
+}
+
+.made-section__group-icons {
+margin-top: 60px;
+margin-left: 50px;
+width: 100%;
+gap: 50px;
+}
+
+.made-section__icon-milk {
+  & img {
+    width: 33px;
+    height: 50px;
+  }
+}
+.made-section__icon-apples {
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.made-section__icon-heart {
+  & img {
+    width: 44px;
+    height: 50px;
+  }
+}
+
+.made-section__icon-milk {
+  & h2 {
+    width: 98px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-apples {
+  & h2 {
+    width: 147px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-heart {
+  & h2 {
+    width: 77px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+
+.made-section__icon-milk {
+  & div {
+    width: 180px;
+    height: 71px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-apples {
+  & div {
+    width: 162px;
+    height: 67px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-heart {
+  & div {
+    width: 159px;
+    height: 67px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+
 }
 
 
