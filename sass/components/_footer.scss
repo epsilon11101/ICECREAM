@@ -1,17 +1,15 @@
 footer {
 
   background: $ice__primary-ligh;
-  min-height: 877px;
+  
   & .location{
     max-width: 1200px;
-    
-    position: relative;
-    & .location-container-cards{
-      position: absolute;
-      top: -330px;
-      width: 100%;
-      
+    transform: translateY(-30%);
 
+    & .location-container-cards{
+
+      width: 100%;
+    
       & .location-cards{
         gap: 32px;
         & .location-card{
@@ -86,10 +84,9 @@ footer {
   }
 
   & .footer__foot{
-    position: relative;
-    top: 220px;
+
     & .location__button {
-      padding-top: 60px;
+      transform: translateY(-100%);
       min-width: 100%;
       gap: 12px;
       line-height: 21px;
@@ -188,15 +185,13 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1279px){
 footer {
 
-  background: $ice__primary-ligh;
   min-height: 1164px;
   & .location{
     max-width: 100%;
     
-    position: relative;
+    
     & .location-container-cards{
-      position: absolute;
-      top: -553px;
+
       width: 100%;
       
       & .location-cards{
@@ -211,7 +206,7 @@ footer {
   }
 }
   & .footer__foot{
-    position: relative;
+   
 
     & .footerbody {
       max-width: 100%;
@@ -289,5 +284,92 @@ footer {
 }
 
 @media screen and (max-width: 767px){
+footer {
 
+
+  
+  & .location{
+    max-width: 100%;
+    
+    
+    & .location-container-cards{
+      
+      transform: translateY(18%);
+
+      width: 100%;
+      
+      & .location-cards{
+      flex-wrap: wrap;
+        gap: 32px;
+        & .location-card{
+        max-width:280px;
+        max-height: 600px;        
+
+      }
+    }
+  }
+}
+
+  & .footer__foot{
+  
+    & .location__button{
+      flex-direction: column;
+    }
+    & .footerbody {
+      flex-direction: column;
+      max-width: 100%;
+      gap: 45px;
+      padding-top: 0px;
+      & .footerbody_text {
+        
+        & p {
+          font-weight: 400;
+          font-size: 26px;
+          text-transform: uppercase;
+
+          &:first-child {
+            font-style: normal;
+            line-height: 34px;
+            letter-spacing: 0.04em;
+            color: $ice__primary-dark;
+            width: 340px;
+            height: 57px;
+            text-align: left;
+          }
+
+          &:last-child {
+            width: 340px;
+            height: 110px;
+            font-size: 48px;
+            line-height: 66px;
+            letter-spacing: 0.06em;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    & .footerbody__network {
+        padding-left: 170px;
+      & .footerbody__contact {
+        min-width: 0px;
+        min-height: 0px;
+        min-width: 0px;
+      min-height: 0px;
+      padding-top: 0px;
+      }
+      & .footerbody_iconsnetwork{
+        gap: 20px;
+      }
+    }
+
+    
+
+
+  }
+
+  & hr{
+    min-width: 50%;
+  }
+}
 }
