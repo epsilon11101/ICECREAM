@@ -1,9 +1,8 @@
 .tc-container{
-    position: relative;
+    
     min-height: 1030px;
 & .collage {
-    position: absolute;
-    top: -17%;
+    transform: translateY(-41%);
     padding-top: 50px;
     padding-bottom: 40px;
     & .collage__container {
@@ -52,9 +51,8 @@
 
 & .testimonial-carousel{
     
-    margin-bottom: 119px;
-    position: absolute;
-    top: 439px;
+    transform: translateY(-50%);
+
 
     & .testimonial{
         gap: 16px;
@@ -132,16 +130,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
 .tc-container{
-    position: relative;
-    
-    gap: 1000px;
-
+    gap:0px;
     & .collage{
-        position: absolute;
-        top: -17%;
+        transform: translateY(-50%);
         width: 100%;
         
-
     & .collage__container {
         max-width: 100%;
         height: 450px;
@@ -161,7 +154,6 @@
             transition: transform 200ms ease-out, box-shadow 200ms ease-out;
             
 
-
         }
         & .c5{
             width: 50%;
@@ -174,21 +166,16 @@
 
     & .testimonial-carousel{
         margin-top: 10px;
-
-        top: 386px;
+        transform: translateY(-80%);
     }
 }
 }
 
 @media screen and (max-width: 767px) {
 .tc-container{
-    position: relative;
     
-    gap: 1000px;
-
     & .collage{
-        position: absolute;
-        top: -17%;
+        transform: translateY(-37%);
         width: 100%;
         
 
@@ -216,8 +203,8 @@
     }
 
     & .testimonial-carousel{
-        margin-top: 10px;
-        top: 285px;
+        
+        transform: translateY(-40%);
 
         & .testimonial__container{
             max-width: 100%;
