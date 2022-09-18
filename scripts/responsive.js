@@ -17,6 +17,7 @@ const map_value = (x, in_min, in_max, out_min, out_max) => {
 function my_onload() {
   w = document.documentElement.clientWidth;
   h = document.documentElement.clientHeight;
+
   if (w < 1280 && w >= 768) {
     nav_mobile[0].style.gap = `${map_value(w, 768, 1279, 36, 61)}vw`;
     girl_img[0].style.left = `${map_value(w, 768, 1279, 93, 125)}%`;
@@ -33,6 +34,9 @@ function my_onload() {
     quantity[1].style.left = ft_top;
     quantity[0].style.top = st_left;
     quantity[1].style.top = st_top;
+  } else if (w < 768) {
+    nav_mobile[0].style.gap = `${map_value(w, 320, 767, 10, 59)}vw`;
+    mob_menu[0].style.left = `${map_value(w, 320, 767, 20, 67)}%`;
   }
 }
 
