@@ -384,7 +384,7 @@ header{
                     font-weight: 700;
                     line-height: 20.83px;
                     font-size: 16px;
-
+                    cursor: pointer;
                     &:hover{
                         background-color: $ice_hover_button;
                     }
@@ -435,7 +435,7 @@ header{
                 font-weight: 700;
                 line-height: 20.83px;
                 font-size: 16px;
-
+                cursor: pointer;
                 &:hover{
                     background-color: $ice_hover_button;
                     }
