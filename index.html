@@ -12,9 +12,11 @@
 
 </head>
 
-<body onload="my_onload()">
-  <!-- HEADER -->
 
+
+<body onload="my_onload()">
+
+  <!-- HEADER -->
   <!-- NAV -->
   <header class="container">
     <nav class="left nav-hero">
@@ -31,7 +33,7 @@
         </ul>
       </div>
       <div class="nav-hero__button">
-        <input type="button" class="button-light effect-up" value="Buy now >" />
+        <input type="button" class="button-light effect-up" value="Buy now >" id="buy-btn" />
       </div>
     </nav>
     <!-- NAV-MOBILE -->
@@ -72,11 +74,6 @@
       </ul>
 
     </div>
-
-
-
-
-
 
     <div class="hero-body container left">
       <div class="hero-body__row left-column">
@@ -124,291 +121,338 @@
       </div>
     </div>
   </header>
+  <main>
+    <!-- PRODUCTS SECTION -->
+    <section class="container">
+      <h3 class="subtitle">100% NATURAL</h3>
+      <h2 class="title">PRODUCTS</h2>
 
-
-
-  <!-- PRODUCTS SECTION -->
-  <section class="container">
-    <h3 class="subtitle">100% NATURAL</h3>
-    <h2 class="title">PRODUCTS</h2>
-
-    <div class="center products">
-      <div class="products__item">
-        <img class="products__image" src="./images/products/strawberry.webp" alt="icecream" />
-        <p class="products__title">ICE CREAM</p>
-        <img src="./images/svg/points.png" alt="points" />
-        <p class="products__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-          accusantium a ad expedita quaerat dolores iure!
-        </p>
-        <div class="products__animation">
-          <svg class="products__arrow">
-            <use href="./images/svg/arrow.svg#image0_70748_227"></use>
-          </svg>
-          <div class="center products__detaildescription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
-            voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
-            veritatis.
-          </div>
-        </div>
-      </div>
-
-      <div class="products__item products__item--coffee">
-        <img class="products__image" src="./images/products/vanilla.webp" alt="icecoffe" />
-        <p class="products__title">ICE COFFEE</p>
-        <img src="./images/svg/points.png" alt="points" />
-        <p class="products__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          mollitia autem perspiciatis totam similique assumenda quisquam.
-        </p>
-        <div class="products__animation">
-          <svg class="products__arrow">
-            <use href="./images/svg/arrow.svg#image0_70748_227"></use>
-          </svg>
-          <div class="center products__detaildescription products__detaildescription--coffee">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
-            voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
-            veritatis.
-          </div>
-        </div>
-      </div>
-      <div class="products__item products__item--green">
-        <img class="products__image" src="./images/products/chocolate.webp" alt="milkshake" />
-        <p class="products__title">MILKSHAKES</p>
-        <img src="./images/svg/points.png" alt="points" />
-        <p class="products__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nemo
-          sint ad quaerat neque, quidem nostrum.
-        </p>
-        <div class="products__animation">
-          <svg class="products__arrow">
-            <use href="./images/svg/arrow.svg#image0_70748_227"></use>
-          </svg>
-          <div class="center products__detaildescription products__detaildescription--green">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
-            voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
-            veritatis.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- HOW ITS MADE SECTION -->
-  <section class="container made-section ">
-
-    <div class="center-column">
-      <h3>tradition and love</h3>
-      <h2>how it’s made?</h2>
-    </div>
-
-
-
-    <div class="made-section__background-milk center ">
-
-      <img src="./images/how_its_made/cow.webp" alt="cow">
-
-      <div class="made-section__main_text left-column">
-        <div class="made-section__tex-black">
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas
-          eros. Maecenas eleifend erat at justo fringilla.
-        </div>
-        <div class="made-section__tex-grays">
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio <br> elementum. Mauris rhoncus orci in imperdiet
-          placerat. <br> Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna <br> maximus. Cras massa
-          nibh,
-          tincidunt. <br>
-          Aliquam erat volutpat. Aenean accumsan.
-        </div>
-
-        <button class="made-section__button-read effect-up "><span>Read more</span></button>
-
-      </div>
-
-    </div>
-    <div class="made-section__group-icons center">
-      <div class="made-section__icon-milk left-column">
-        <img src="./images/svg/milk.svg" alt="milk">
-        <h2>721</h2>
-        <div>
-          Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
-        </div>
-      </div>
-      <div class="made-section__icon-apples left-column">
-        <img src="./images/svg/apples.svg" alt="apples">
-        <h2>16kg</h2>
-        <div>
-          Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
-        </div>
-      </div>
-      <div class="made-section__icon-heart left-column">
-        <img src="./images/svg/heart.svg" alt="heart">
-        <h2>84</h2>
-        <div>
-          Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- COLLAGE SECTION -->
-  <!-- TESTIMONIAL SECTION -->
-  <section class="container center-column tc-container">
-    <div class="center collage ">
-      <div class="collage__container">
-
-        <div class="collage__divide">
-          <picture>
-            <img class="collage__image" src="./images/collage/c1.webp" alt="" />
-          </picture>
-        </div>
-
-        <div class="collage__divide">
-          <picture>
-            <img class="collage__image collage__image collage__image--bottom collage__image--top_one"
-              src="./images/collage/c2.webp" alt="" />
-          </picture>
-          <picture>
-            <img class="collage__image" src="./images/collage/c3.webp" alt="" />
-          </picture>
-        </div>
-
-        <div class="collage__divide">
-          <picture>
-            <img class="collage__image collage__image--bottom" src="./images/collage/c4.webp" alt="" />
-          </picture>
-          <picture>
-            <img class="collage__image c5" src="./images/collage/c5.webp" alt="" />
-          </picture>
-        </div>
-
-        <div class="collage__divide">
-          <picture>
-            <img class="collage__image collage__image collage__image--bottom collage__image--top_two"
-              src="./images/collage/c6.webp" alt="" />
-          </picture>
-          <picture>
-            <img class="collage__image" src="./images/collage/c7.webp" alt="" />
-          </picture>
-        </div>
-
-        <div class="collage__divide">
-          <picture>
-            <img class="collage__image collage__image collage__image--bottom collage__image--top_three"
-              src="./images/collage/c8.webp" alt="" />
-          </picture>
-          <picture>
-            <img class="collage__image" src="./images/collage/c9.webp" alt="" />
-          </picture>
-        </div>
-
-        <div class="collage__divide">
-          <picture>
-            <img class="collage__image" src="./images/collage/c10.webp" alt="" />
-          </picture>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-carousel center-column">
-      <div class="center-column testimonial carousel-item ">
-        <img src="./images/testimonials/t1.webp" class="testimonial__image" />
-        <div class="testimonial__container center">
-          <div class="testimonial__container__text center">
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
-              nunc,
-              accumsan congue. Lorem ipsum primis in nibh vel risus.
-            </p>
+      <div class="center products">
+        <div class="products__item">
+          <img class="products__image" src="./images/products/strawberry.webp" alt="icecream" />
+          <p class="products__title">ICE CREAM</p>
+          <img src="./images/svg/points.png" alt="points" />
+          <p class="products__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            accusantium a ad expedita quaerat dolores iure!
+          </p>
+          <div class="products__animation">
+            <svg class="products__arrow">
+              <use href="./images/svg/arrow.svg#image0_70748_227"></use>
+            </svg>
+            <div class="center products__detaildescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
+              voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
+              veritatis.
+            </div>
           </div>
         </div>
 
-        <div class="testimonial__name center-column">
-          <div class="testimonial__name__circle center">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
+        <div class="products__item products__item--coffee">
+          <img class="products__image" src="./images/products/vanilla.webp" alt="icecoffe" />
+          <p class="products__title">ICE COFFEE</p>
+          <img src="./images/svg/points.png" alt="points" />
+          <p class="products__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            mollitia autem perspiciatis totam similique assumenda quisquam.
+          </p>
+          <div class="products__animation">
+            <svg class="products__arrow">
+              <use href="./images/svg/arrow.svg#image0_70748_227"></use>
+            </svg>
+            <div class="center products__detaildescription products__detaildescription--coffee">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
+              voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
+              veritatis.
+            </div>
+          </div>
+        </div>
+        <div class="products__item products__item--green">
+          <img class="products__image" src="./images/products/chocolate.webp" alt="milkshake" />
+          <p class="products__title">MILKSHAKES</p>
+          <img src="./images/svg/points.png" alt="points" />
+          <p class="products__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nemo
+            sint ad quaerat neque, quidem nostrum.
+          </p>
+          <div class="products__animation">
+            <svg class="products__arrow">
+              <use href="./images/svg/arrow.svg#image0_70748_227"></use>
+            </svg>
+            <div class="center products__detaildescription products__detaildescription--green">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
+              voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
+              veritatis.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOW ITS MADE SECTION -->
+    <section class="container made-section ">
+
+      <div class="center-column">
+        <h3>tradition and love</h3>
+        <h2>how it’s made?</h2>
+      </div>
+
+
+
+      <div class="made-section__background-milk center ">
+
+        <img src="./images/how_its_made/cow.webp" alt="cow">
+
+        <div class="made-section__main_text left-column">
+          <div class="made-section__tex-black">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas
+            eros. Maecenas eleifend erat at justo fringilla.
+          </div>
+          <div class="made-section__tex-grays">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio <br> elementum. Mauris rhoncus orci in imperdiet
+            placerat. <br> Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna <br> maximus. Cras massa
+            nibh,
+            tincidunt. <br>
+            Aliquam erat volutpat. Aenean accumsan.
           </div>
 
-          <div class="testimonial__name__user center">
-            <p>Emily, Los Angeles</p>
+          <button class="made-section__button-read effect-up "><span>Read more</span></button>
+
+        </div>
+
+      </div>
+      <div class="made-section__group-icons center">
+        <div class="made-section__icon-milk left-column">
+          <img src="./images/svg/milk.svg" alt="milk">
+          <h2>721</h2>
+          <div>
+            Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
+          </div>
+        </div>
+        <div class="made-section__icon-apples left-column">
+          <img src="./images/svg/apples.svg" alt="apples">
+          <h2>16kg</h2>
+          <div>
+            Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
+          </div>
+        </div>
+        <div class="made-section__icon-heart left-column">
+          <img src="./images/svg/heart.svg" alt="heart">
+          <h2>84</h2>
+          <div>
+            Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- COLLAGE SECTION -->
+    <!-- TESTIMONIAL SECTION -->
+    <section class="container center-column tc-container">
+      <div class="center collage ">
+        <div class="collage__container">
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image" src="./images/collage/c1.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image collage__image--bottom collage__image--top_one"
+                src="./images/collage/c2.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image" src="./images/collage/c3.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image--bottom" src="./images/collage/c4.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image c5" src="./images/collage/c5.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image collage__image--bottom collage__image--top_two"
+                src="./images/collage/c6.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image" src="./images/collage/c7.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image collage__image--bottom collage__image--top_three"
+                src="./images/collage/c8.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image" src="./images/collage/c9.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image" src="./images/collage/c10.webp" alt="" />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-carousel center-column">
+        <div class="center-column testimonial carousel-item ">
+          <img src="./images/testimonials/t1.webp" class="testimonial__image" />
+          <div class="testimonial__container center">
+            <div class="testimonial__container__text center">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                nunc,
+                accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial__name center-column">
+            <div class="testimonial__name__circle center">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+
+            <div class="testimonial__name__user center">
+              <p>Emily, Los Angeles</p>
+            </div>
+
+
           </div>
 
 
         </div>
-
-
-      </div>
-      <div class="center-column testimonial carousel-item">
-        <img src="./images/testimonials/t2.webp" class="testimonial__image" />
-        <div class="testimonial__container center">
-          <div class="testimonial__container__text center">
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
-              nunc,
-              accumsan congue. Lorem ipsum primis in nibh vel risus.
-            </p>
-          </div>
-        </div>
-
-        <div class="testimonial__name center-column">
-          <div class="testimonial__name__circle center">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
+        <div class="center-column testimonial carousel-item">
+          <img src="./images/testimonials/t2.webp" class="testimonial__image" />
+          <div class="testimonial__container center">
+            <div class="testimonial__container__text center">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                nunc,
+                accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
           </div>
 
-          <div class="testimonial__name__user center">
-            <p>Emily, Los Angeles</p>
-          </div>
+          <div class="testimonial__name center-column">
+            <div class="testimonial__name__circle center">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+
+            <div class="testimonial__name__user center">
+              <p>Emily, Los Angeles</p>
+            </div>
 
 
-        </div>
-
-
-      </div>
-      <div class="center-column testimonial carousel-item">
-        <img src="./images/testimonials/t3.webp" class="testimonial__image" />
-        <div class="testimonial__container center">
-          <div class="testimonial__container__text center">
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
-              nunc,
-              accumsan congue. Lorem ipsum primis in nibh vel risus.
-            </p>
-          </div>
-        </div>
-
-        <div class="testimonial__name center-column">
-          <div class="testimonial__name__circle center">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-          </div>
-
-          <div class="testimonial__name__user center">
-            <p>Emily, Los Angeles</p>
           </div>
 
 
         </div>
+        <div class="center-column testimonial carousel-item">
+          <img src="./images/testimonials/t3.webp" class="testimonial__image" />
+          <div class="testimonial__container center">
+            <div class="testimonial__container__text center">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                nunc,
+                accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
 
+          <div class="testimonial__name center-column">
+            <div class="testimonial__name__circle center">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+
+            <div class="testimonial__name__user center">
+              <p>Emily, Los Angeles</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div class="testimonial-carousel-control center">
+          <span><i class="fa-solid fa-circle" id="selector_0"></i></span>
+          <span><i class="fa-solid fa-circle" id="selector_1"></i></span>
+          <span><i class="fa-solid fa-circle" id="selector_2"></i></span>
+        </div>
 
       </div>
-      <div class="testimonial-carousel-control center">
-        <span><i class="fa-solid fa-circle" id="selector_0"></i></span>
-        <span><i class="fa-solid fa-circle" id="selector_1"></i></span>
-        <span><i class="fa-solid fa-circle" id="selector_2"></i></span>
+    </section>
+
+    <!-- MODAL SECTION -->
+    <section class="buy-modal center hidde-buy">
+      <div class="buy-modal-container center-column">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <p class="buy-title">Super Ice Cream</p>
+        <form action="" name="buy-modal-form" class="center-column">
+          <div class="space buy-elements">
+            <div class="buy-label-element center-column">
+              <img src="./images/products/vanilla.webp" alt="vanilla">
+              <label>
+                <input type="text" name="icecream" placeholder="how many?" />
+              </label>
+            </div>
+            <div class="buy-label-element center-column">
+              <img src="./images/products/strawberry.webp" alt="vanilla">
+              <label>
+                <input type="text" name="icecream" placeholder="how many?" />
+              </label>
+            </div>
+            <div class="buy-label-element center-column">
+              <img src="./images/products/chocolate.webp" alt="vanilla">
+              <label>
+                <input type="text" name="icecream" placeholder="how many?" />
+              </label>
+            </div>
+
+          </div>
+
+          <div class="center-column buy-contact-info">
+            <label class="center-left">
+              <p class="label">Name</p>
+              <input type="text" name="username" />
+            </label>
+            <label class="center-left">
+              <p class="label">Phone</p>
+              <input type="tel" name="username" />
+            </label>
+            <label class="center-left">
+              <p class="label">Email</p>
+              <input type="email" name="username" />
+            </label>
+            <label class="center-left">
+              <textarea name="feedback" rows="7" placeholder="Write something and maybe we read this"></textarea>
+            </label>
+          </div>
+
+
+          <button type="submit" class="button-light">I want that</button>
+        </form>
       </div>
-
-    </div>
-  </section>
-
+    </section>
+  </main>
   <!-- FOOTER SECTION -->
   <!-- LOCATION SECTION -->
-  <footer class="container center-column">
+  <footer class="container center-column ">
     <div class="location container">
       <div class="location-container-cards">
         <ul class="center location-cards">
@@ -552,9 +596,15 @@
 
   </footer>
 
+
+
   <script src="./scripts/responsive.js"></script>
   <script src="./scripts/menu.js"></script>
   <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/buy-modal.js"></script>
 </body>
+
+
+
 
 </html>
