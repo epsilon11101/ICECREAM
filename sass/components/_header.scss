@@ -2,6 +2,7 @@ header{
     max-width: 1280px;
     min-height: 664px;
     background-color: $ice__primary;
+    position: relative;
     & .nav-hero{
         display: flex;
         margin: 0px 56px;
@@ -24,6 +25,7 @@ header{
         }
 
         & .nav-hero__button{
+            z-index: 1;
             & input{
             width: 159px;
             height: 44px;
@@ -43,6 +45,7 @@ header{
     }
 
     & .hero-body{
+        z-index: 1;
         min-width: 100%;
         position: relative;
         
@@ -77,6 +80,7 @@ header{
             }
 
             & .hero-body__row_buttons{
+                z-index: 1;
                 max-width: 100%;
                 gap: 12px;
                 margin-top: 24px;
@@ -102,7 +106,7 @@ header{
             }
 
             & .hero-body__row_promotional{
-
+                z-index: 1;
                 max-width: 100%;
                 margin-top: 40px;
                 & .hero-body__row_promotional_text{
@@ -186,6 +190,50 @@ header{
         }
     }
 
+    & .bubbles{
+        position: relative;
+        width: 100vh;
+        height: 100vh;
+        z-index: 0;
+
+        & span{
+            z-index: 0;
+            position: absolute;
+            bottom: -50px;
+            background: transparent;
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: inset 0 0 10px rgba(142, 142, 142, 0.444);
+            animation: animate 4s linear infinite;
+
+            &:before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: scale(0.25) translate(-70%,-70%);
+                background-color: radial-gradient(#fff,transparent);
+                border-radius: 50%;
+            }
+        }
+
+
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+        99%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-1200%);
+            opacity: 0;
+        }
+
+    }
 
 
 }
@@ -443,6 +491,10 @@ header{
         }
 
     }
+
+    & .bubbles{
+        display: none;
+    }
     }
 }
 
@@ -633,7 +685,9 @@ header{
         }
 
     }
-
+& .bubbles{
+    display: none;
+}
     }
 
 }
@@ -641,3 +695,4 @@ header{
 .hide-menu{
         display: none;
     }
+
