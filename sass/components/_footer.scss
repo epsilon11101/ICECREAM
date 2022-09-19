@@ -4,15 +4,17 @@ footer {
   
   & .location{
     max-width: 1200px;
-    transform: translateY(-30%);
+    
 
     & .location-container-cards{
-
+      transform: translateY(-30%);
       width: 100%;
-    
+      
       & .location-cards{
         gap: 32px;
+
         & .location-card{
+        transition: all 1.2s ease;
         min-width:368px;
         min-height: 570px;
         border-radius: 24px;
@@ -28,6 +30,12 @@ footer {
         font-style: normal;
         letter-spacing: 0.04em;        
 
+        &:hover{
+          transform: scale(0.9);
+          box-shadow: 10px 3px 20px -6px rgba(230,32,126,0.38);
+          -webkit-box-shadow: 10px 3px 20px -6px rgba(230,32,126,0.38);
+          -moz-box-shadow: 10px 3px 20px -6px rgba(230,32,126,0.38);
+        }
 
         & .location-card-title{
           color: $ice__white;
@@ -77,6 +85,8 @@ footer {
           }
         }
       }
+
+
     }
 
 
