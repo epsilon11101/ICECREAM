@@ -136,3 +136,12 @@ ol {
 .hidde-buy{
         display: none !important;
     }
+
+input,textarea{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+

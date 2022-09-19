@@ -35,7 +35,9 @@
       <div class="nav-hero__button">
         <input type="button" class="button-light effect-up" value="Buy now >" id="buy-btn" />
       </div>
+
     </nav>
+
     <!-- NAV-MOBILE -->
     <nav class="left  nav-mobile-hero">
 
@@ -49,7 +51,7 @@
         </div>
 
         <div class="nav-mobile-hero__menu__button">
-          <input type="button" class="button-light effect-up" value="Buy now >" />
+          <input type="button" class="button-light effect-up" value="Buy now >" id="buy-btn-tablet" />
         </div>
       </div>
 
@@ -120,6 +122,11 @@
         </div>
       </div>
     </div>
+
+    <div class="bubbles">
+    </div>
+
+
   </header>
   <main>
     <!-- PRODUCTS SECTION -->
@@ -579,14 +586,44 @@
 
           </div>
         </div>
-        <input type="button" class="effect-up button-light" value="Franchise >" />
+        <input type="button" class="effect-up button-light" value="Franchise >" id="franchise_btn" />
+        <div class="franchise-modal center-column hidde-buy">
+          <div class="franchise-container center-left">
+            <span><i class="fa-solid fa-xmark"></i></span>
+            <p class="title-franchise">Leave your details, and maybe we will call you back</p>
+            <label class="">
+              <p>Name</p>
+              <input type="text" name="name" />
+            </label>
+            <label class="">
+              <p>Number</p>
+              <input type="tel" name="number" />
+            </label>
+            <label class="">
+              <p>Email</p>
+              <input type="text" name="email" />
+            </label>
+            <label class="">
+              <p>A few words, my darling</p>
+              <textarea name="feedback" rows="7" placeholder="Write here"></textarea>
+            </label>
+
+            <div class="center">
+              <input type="submit" class="effect-up button-light" value="Send" />
+            </div>
+
+
+          </div>
+        </div>
       </div>
 
       <div class="container footerbody space ">
 
         <div class="footerbody_text left-column">
           <p class="title">homemade ice cream made</p>
-          <p class="title">with passion</p>
+          <p class="title passion">
+            <span>w</span><span>i</span><span>t</span><span>h</span><span>p</span><span>a</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span>
+          </p>
         </div>
 
         <div>
@@ -617,10 +654,12 @@
 
 
 
+
   <script src="./scripts/responsive.js"></script>
   <script src="./scripts/menu.js"></script>
   <script src="./scripts/carousel.js"></script>
   <script src="./scripts/modal.js"></script>
+  <script src="./scripts/bubbles.js"></script>
 </body>
 
 
