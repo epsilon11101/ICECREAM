@@ -10,4 +10,4 @@ let closeMenu = () => {
 menu_btn[0].addEventListener("click", closeMenu);
 close_menu[0].addEventListener("click", closeMenu);
 
-console.log(menu_btn);
+// effects

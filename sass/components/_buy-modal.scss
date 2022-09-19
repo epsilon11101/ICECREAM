@@ -63,6 +63,12 @@
             font-weight: 900;
           line-height: 21px;
           margin-bottom: 10px;
+        }        
+        
+        input,textarea{
+        &:focus{
+            border: 2px solid $ice__secundary;
+        }
         }
     }
 

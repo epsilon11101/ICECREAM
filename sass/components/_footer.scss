@@ -173,7 +173,9 @@ footer {
     }
 
     & .footerbotton {
+    
       & p {
+          transition: all 1s ease;
         &:first-child {
           border: 1px solid #e1e1e1;
           width: 1167px;
@@ -182,7 +184,16 @@ footer {
         &:last-child {
           color: $ice_gray;
         }
+
+        &:hover{
+          transform: scale(1) !important;
+          color: $ice_black;
+          font-size: 20px;
+          cursor: pointer;
+        }
+
       }
+
     }
   }
   & hr{
@@ -190,6 +201,17 @@ footer {
           height: 0px;
           border: 1px solid $ice_light_gray_space;
         }
+  
+  & .passion{
+    display: inline-block;
+    & span:hover{
+      font-size: 70px;
+      cursor: pointer;
+    
+  }
+
+    
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -380,3 +402,4 @@ footer {
 
 }
 }
+
