@@ -1,0 +1,10 @@
+.tc-container{
+    .testimonial-carousel{
+        .carousel-item{
+            display: none;
+        }
+        .carousel-item-selected{
+            display: flex;
+        }
+    }
+}
