@@ -36,14 +36,10 @@ function my_onload() {
     quantity[1].style.top = st_top;
   } else if (w < 768) {
     nav_mobile[0].style.gap = `${map_value(w, 320, 767, 10, 59)}vw`;
-    mob_menu[0].style.left = `${map_value(w, 320, 767, 20, 67)}%`;
+    mob_menu[0].style.left = `${map_value(w, 320, 767, 27, 67)}%`;
   }
 }
 
 onresize = () => {
   my_onload();
 };
-
-window.addEventListener("resize", function (event) {
-  // do stuff here
-});
