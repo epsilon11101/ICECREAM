@@ -2,33 +2,628 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/4050c71461.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>ICECREAM</title>
+
 </head>
 
-<body>
 
-    <!-- HEADER -->
 
-    <!-- NAV -->
+<body onload="my_onload()">
 
+  <!-- HEADER -->
+  <!-- NAV -->
+  <header class="container">
+    <nav class="left nav-hero">
+      <div class="nav-hero__logo left">
+        <img src="./images/nav/logo.svg" alt="" />
+      </div>
+      <div class="nav-hero__items">
+        <ul class="space">
+          <li class="effect-up"><a href="#"></a>Home</li>
+          <li class="effect-up"><a href=""></a>About us</li>
+          <li class="effect-up"><a href=""></a>How it's made</li>
+          <li class="effect-up"><a href=""></a>Our products</li>
+          <li class="effect-up"><a href=""></a>Contact</li>
+        </ul>
+      </div>
+      <div class="nav-hero__button">
+        <input type="button" class="button-light effect-up" value="Buy now >" id="buy-btn" />
+      </div>
+    </nav>
     <!-- NAV-MOBILE -->
+    <nav class="left  nav-mobile-hero">
 
+      <div class="nav-mobile-hero__logo left">
+        <img src="./images/nav/logo.svg" alt="" />
+      </div>
+
+      <div class="center nav-mobile-hero__menu">
+        <div class="nav-mobile-bars-menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+
+        <div class="nav-mobile-hero__menu__button">
+          <input type="button" class="button-light effect-up" value="Buy now >" />
+        </div>
+      </div>
+
+
+    </nav>
+
+    <div class="mobile-menu hide-menu">
+
+      <ul class="left-column">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <li class="effect-up center">
+          <div class="mobile-menu__button center">
+            <input type="button" class="button-light effect-up" value="Buy now >" />
+          </div>
+        </li>
+        <li class="effect-up"><a href="#"></a>Home</li>
+        <li class="effect-up"><a href=""></a>About us</li>
+        <li class="effect-up"><a href=""></a>How it's made</li>
+        <li class="effect-up"><a href=""></a>Our products</li>
+        <li class="effect-up"><a href=""></a>Contact</li>
+
+      </ul>
+
+    </div>
+
+    <div class="hero-body container left">
+      <div class="hero-body__row left-column">
+        <div class="hero-body__row__title left-column">
+          <p class="title">ICE CREAM MADE WITH</p>
+          <p class="title">PASSION</p>
+        </div>
+
+        <div class="hero-body__row_buttons left">
+          <input class="button-dark effect-up" type="button" value="Producs" />
+          <input class="button-light effect-up" type="button" value="How it's made" />
+        </div>
+
+        <div class="hero-body__row_promotional left">
+          <div>
+            <img src="./images/header/milk.svg" alt="" />
+          </div>
+          <div class="hero-body__row_promotional_text">
+            <div class="left-column">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et
+              </p>
+              <div class="hero-body__row_promotional_text_button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-body__row_right center">
+        <div class="hero-body__row_right_bg"></div>
+        <div class="hero-body__row_right_bg_ice"></div>
+        <div class="hero-body__row_right_bg_girl"></div>
+
+
+        <div class="hero-body__row_right_text right-column">
+          <p class="title">16</p>
+          <p>cafes</p>
+        </div>
+
+        <div class="hero-body__row_right_text left-column">
+          <p class="title">23</p>
+          <p>food trucks</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
     <!-- PRODUCTS SECTION -->
+    <section class="container">
+      <h3 class="subtitle">100% NATURAL</h3>
+      <h2 class="title">PRODUCTS</h2>
 
+      <div class="center products">
+        <div class="products__item">
+          <img class="products__image" src="./images/products/strawberry.webp" alt="icecream" />
+          <p class="products__title">ICE CREAM</p>
+          <img src="./images/svg/points.png" alt="points" />
+          <p class="products__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            accusantium a ad expedita quaerat dolores iure!
+          </p>
+          <div class="products__animation">
+            <svg class="products__arrow">
+              <use href="./images/svg/arrow.svg#image0_70748_227"></use>
+            </svg>
+            <div class="center products__detaildescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
+              voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
+              veritatis.
+            </div>
+          </div>
+        </div>
+
+        <div class="products__item products__item--coffee">
+          <img class="products__image" src="./images/products/vanilla.webp" alt="icecoffe" />
+          <p class="products__title">ICE COFFEE</p>
+          <img src="./images/svg/points.png" alt="points" />
+          <p class="products__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            mollitia autem perspiciatis totam similique assumenda quisquam.
+          </p>
+          <div class="products__animation">
+            <svg class="products__arrow">
+              <use href="./images/svg/arrow.svg#image0_70748_227"></use>
+            </svg>
+            <div class="center products__detaildescription products__detaildescription--coffee">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
+              voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
+              veritatis.
+            </div>
+          </div>
+        </div>
+        <div class="products__item products__item--green">
+          <img class="products__image" src="./images/products/chocolate.webp" alt="milkshake" />
+          <p class="products__title">MILKSHAKES</p>
+          <img src="./images/svg/points.png" alt="points" />
+          <p class="products__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nemo
+            sint ad quaerat neque, quidem nostrum.
+          </p>
+          <div class="products__animation">
+            <svg class="products__arrow">
+              <use href="./images/svg/arrow.svg#image0_70748_227"></use>
+            </svg>
+            <div class="center products__detaildescription products__detaildescription--green">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis minima fugiat error
+              voluptatem repellat sequi quis nisi! Nihil est ea at iure natus obcaecati sunt pariatur repellendus beatae
+              veritatis.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- HOW ITS MADE SECTION -->
+    <section class="container made-section ">
 
+      <div class="center-column">
+        <h3>tradition and love</h3>
+        <h2>how it’s made?</h2>
+      </div>
+
+
+
+      <div class="made-section__background-milk center ">
+
+        <img src="./images/how_its_made/cow.webp" alt="cow">
+
+        <div class="made-section__main_text left-column">
+          <div class="made-section__tex-black">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas
+            eros. Maecenas eleifend erat at justo fringilla.
+          </div>
+          <div class="made-section__tex-grays">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio <br> elementum. Mauris rhoncus orci in imperdiet
+            placerat. <br> Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna <br> maximus. Cras massa
+            nibh,
+            tincidunt. <br>
+            Aliquam erat volutpat. Aenean accumsan.
+          </div>
+
+          <button class="made-section__button-read effect-up "><span>Read more</span></button>
+
+        </div>
+
+      </div>
+      <div class="made-section__group-icons center">
+        <div class="made-section__icon-milk left-column">
+          <img src="./images/svg/milk.svg" alt="milk">
+          <h2>721</h2>
+          <div>
+            Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
+          </div>
+        </div>
+        <div class="made-section__icon-apples left-column">
+          <img src="./images/svg/apples.svg" alt="apples">
+          <h2>16kg</h2>
+          <div>
+            Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
+          </div>
+        </div>
+        <div class="made-section__icon-heart left-column">
+          <img src="./images/svg/heart.svg" alt="heart">
+          <h2>84</h2>
+          <div>
+            Aliquam ac dui vel dui vulputate <br> consectetur. Mauris massa.
+          </div>
+        </div>
+
+      </div>
+
+    </section>
     <!-- COLLAGE SECTION -->
-
     <!-- TESTIMONIAL SECTION -->
+    <section class="container center-column tc-container">
+      <div class="center collage ">
+        <div class="collage__container">
 
-    <!-- LOCATION SECTION -->
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image" src="./images/collage/c1.webp" alt="" />
+            </picture>
+          </div>
 
-    <!-- FOOTER SECTION -->
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image collage__image--bottom collage__image--top_one"
+                src="./images/collage/c2.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image" src="./images/collage/c3.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image--bottom" src="./images/collage/c4.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image c5" src="./images/collage/c5.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image collage__image--bottom collage__image--top_two"
+                src="./images/collage/c6.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image" src="./images/collage/c7.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image collage__image collage__image--bottom collage__image--top_three"
+                src="./images/collage/c8.webp" alt="" />
+            </picture>
+            <picture>
+              <img class="collage__image" src="./images/collage/c9.webp" alt="" />
+            </picture>
+          </div>
+
+          <div class="collage__divide">
+            <picture>
+              <img class="collage__image" src="./images/collage/c10.webp" alt="" />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-carousel center-column">
+        <div class="center-column testimonial carousel-item ">
+          <img src="./images/testimonials/t1.webp" class="testimonial__image" />
+          <div class="testimonial__container center">
+            <div class="testimonial__container__text center">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                nunc,
+                accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial__name center-column">
+            <div class="testimonial__name__circle center">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+
+            <div class="testimonial__name__user center">
+              <p>Emily, Los Angeles</p>
+            </div>
 
 
+          </div>
+
+
+        </div>
+        <div class="center-column testimonial carousel-item">
+          <img src="./images/testimonials/t2.webp" class="testimonial__image" />
+          <div class="testimonial__container center">
+            <div class="testimonial__container__text center">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                nunc,
+                accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial__name center-column">
+            <div class="testimonial__name__circle center">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+
+            <div class="testimonial__name__user center">
+              <p>Angela, Texas</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div class="center-column testimonial carousel-item">
+          <img src="./images/testimonials/t3.webp" class="testimonial__image" />
+          <div class="testimonial__container center">
+            <div class="testimonial__container__text center">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                nunc,
+                accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial__name center-column">
+            <div class="testimonial__name__circle center">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+
+            <div class="testimonial__name__user center">
+              <p>Marie, California</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div class="testimonial-carousel-control center">
+          <span><i class="fa-solid fa-circle" id="selector_0"></i></span>
+          <span><i class="fa-solid fa-circle" id="selector_1"></i></span>
+          <span><i class="fa-solid fa-circle" id="selector_2"></i></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MODAL SECTION -->
+    <section class="buy-modal center hidde-buy">
+      <div class="buy-modal-container center-column">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <p class="buy-title">Super Ice Cream</p>
+        <form action="" name="buy-modal-form" class="center-column">
+          <div class="space buy-elements">
+            <div class="buy-label-element center-column">
+              <img src="./images/products/vanilla.webp" alt="vanilla">
+              <label>
+                <input type="text" name="icecream" placeholder="how many?" />
+              </label>
+            </div>
+            <div class="buy-label-element center-column">
+              <img src="./images/products/strawberry.webp" alt="vanilla">
+              <label>
+                <input type="text" name="icecream" placeholder="how many?" />
+              </label>
+            </div>
+            <div class="buy-label-element center-column">
+              <img src="./images/products/chocolate.webp" alt="vanilla">
+              <label>
+                <input type="text" name="icecream" placeholder="how many?" />
+              </label>
+            </div>
+
+          </div>
+
+          <div class="center-column buy-contact-info">
+            <label class="center-left">
+              <p class="label">Name</p>
+              <input type="text" name="username" />
+            </label>
+            <label class="center-left">
+              <p class="label">Phone</p>
+              <input type="tel" name="username" />
+            </label>
+            <label class="center-left">
+              <p class="label">Email</p>
+              <input type="email" name="username" />
+            </label>
+            <label class="center-left">
+              <textarea name="feedback" rows="7" placeholder="Write something and maybe we read this"></textarea>
+            </label>
+          </div>
+
+
+          <button type="submit" class="button-light">I want that</button>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- FOOTER SECTION -->
+  <!-- LOCATION SECTION -->
+  <footer class="container center-column ">
+    <div class="location container">
+      <div class="location-container-cards">
+        <ul class="center location-cards">
+          <li>
+            <div class="location-card left-column">
+              <div class="location-card-title center">
+                <p>CAFE</p>
+              </div>
+
+              <div class="location-card-location left-column">
+                <p>Chicago</p>
+                <p>
+                  Fusce ut velit laoreet, tempus arcu molestie vulputate
+                </p>
+              </div>
+              <hr>
+              <div class="location-card-schedule left-column">
+                <div>
+                  <p> Monday - Friday</p>
+                  <p> 06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <p> Saturday - Sunday</p>
+                  <p> 08:00 AM - 16:00 PM</p>
+                </div>
+
+              </div>
+              <hr>
+              <div class="location-card-contact left-column">
+                <p>+61(0) 383 766 284 <br> noreply@envato.com</p>
+              </div>
+
+
+            </div>
+          </li>
+          <li>
+            <div class="location-card left-column">
+              <div class="location-card-title center">
+                <p>FOOD TRUCK</p>
+              </div>
+
+              <div class="location-card-location left-column">
+                <p>Los Angeles</p>
+                <p>
+                  Fusce ut velit laoreet, tempus arcu molestie vulputate
+                </p>
+              </div>
+              <hr>
+              <div class="location-card-schedule left-column">
+                <div>
+                  <p> Monday - Friday</p>
+                  <p> 06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <p> Saturday - Sunday</p>
+                  <p> 08:00 AM - 16:00 PM</p>
+                </div>
+
+              </div>
+              <hr>
+              <div class="location-card-contact left-column">
+                <p>+61(0) 383 766 284 <br> noreply@envato.com</p>
+              </div>
+
+
+            </div>
+          </li>
+          <li>
+            <div class="location-card left-column">
+              <div class="location-card-title center">
+                <p>New York</p>
+              </div>
+
+              <div class="location-card-location left-column">
+                <p>Chicago</p>
+                <p>
+                  Fusce ut velit laoreet, tempus arcu molestie vulputate
+                </p>
+              </div>
+              <hr>
+              <div class="location-card-schedule left-column">
+                <div>
+                  <p> Monday - Friday</p>
+                  <p> 06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <p> Saturday - Sunday</p>
+                  <p> 08:00 AM - 16:00 PM</p>
+                </div>
+
+              </div>
+              <hr>
+              <div class="location-card-contact left-column">
+                <p>+61(0) 383 766 284 <br> noreply@envato.com</p>
+              </div>
+
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__foot">
+      <div class="center location__button">
+        <input type="button" class="effect-up button-dark" value="Our Locations >" id="location_btn" />
+        <div class="location-modal center-column hidde-buy">
+          <div class="location-container container center-column">
+            <span><i class="fa-solid fa-xmark"></i></span>
+            <p>We will be glad to see you</p>
+            <div class="responsive-map-container center">
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.307091553252!2d-103.37508728534294!3d20.697750804372333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428afa807c6a169%3A0x4bef1ea7000682f3!2sGoIT%20LatAm!5e0!3m2!1ses!2smx!4v1663571968644!5m2!1ses!2smx"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <input type="button" class="effect-up button-light" value="Open in Google Maps" />
+
+          </div>
+        </div>
+        <input type="button" class="effect-up button-light" value="Franchise >" />
+      </div>
+
+      <div class="container footerbody space ">
+
+        <div class="footerbody_text left-column">
+          <p class="title">homemade ice cream made</p>
+          <p class="title">with passion</p>
+        </div>
+
+        <div>
+          <div class="footerbody__network ">
+            <div class="center footerbody_iconsnetwork">
+              <a href="https://github.com/"><img src="./images/svg/github.svg" alt="" /></a>
+
+              <a href="https://telegram.org/"><img src="./images/svg/telegram.svg" alt="" /></a>
+              <a href="https://www.facebook.com/">
+                <img src="./images/svg/facebook.svg" alt="" /></a>
+            </div>
+
+            <div class="footerbody__contact ">
+              <span>Feel free to contact </span>
+              <span>+61 (0) 383 766 284</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerbotton center-column">
+        <hr>
+        <p>© 2022 - IceCream. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="./scripts/responsive.js"></script>
+  <script src="./scripts/menu.js"></script>
+  <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
+
+
+
 
 </html>

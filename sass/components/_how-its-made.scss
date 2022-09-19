@@ -1,0 +1,569 @@
+@import "../utils/_brand_color.scss";
+@import "../utils/_font_family.scss";
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+.made-section {
+  height: 1229px;
+  left: 0px;
+  top: 1717px;
+  background: $ice__primary-ligh;
+}
+
+.made-section {
+  & h3 {
+
+    max-width: 351px;
+    max-height: 34px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $ice__primary-dark;
+    transition: letter-spacing 2s ease;
+
+  }  
+}
+
+.made-section{
+  & div h2,
+  & div h3{
+    &:hover {
+        letter-spacing: 10px;
+      }
+  }
+}
+
+.made-section {
+  & h2 {
+
+    max-width: 534px;
+    max-height: 66px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $ice__secundary;
+    transition: letter-spacing 2s ease;
+  }
+    
+}
+
+.made-section__background-milk {
+  min-width: 100%;
+  background-image: url(../images/how_its_made/milk.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 99px;
+}
+
+
+.made-section__background-milk {
+  > img {
+    width: 501px;
+    height: 501px;
+  }
+}
+.made-section__main_text {
+  gap:30px;
+  max-width:463px;
+}
+
+.made-section__tex-black {
+  width: 463px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+
+  color: $ice_black;
+}
+
+.made-section__tex-grays {
+  width: 463px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: $ice_gray;
+}
+
+.made-section__button-read {
+  width: 176px;
+  height: 44px;
+  background: $ice__white;
+  border-radius: 22px;
+  border: none;
+}
+
+.made-section__button-read {
+  & span {
+    width: 83px;
+    height: 44px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $ice__secundary;
+    padding: 10px auto;
+  }
+}
+.made-section__button-read {
+  &:hover {
+    background: #ecebeb;
+  }
+}
+
+.made-section__group-icons {
+
+  align-items: baseline;
+}
+
+.made-section__icon-milk {
+  > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.made-section__icon-apples {
+  > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.made-section__icon-heart {
+  > img {
+    width: 44px;
+    height: 50px;
+  }
+}
+
+.made-section__icon-milk {
+  > h2 {
+    width: 98px;
+    height: 65px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-apples {
+  > h2 {
+    width: 147px;
+    height: 65px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-heart {
+  > h2 {
+    width: 77px;
+    height: 65px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+
+.made-section__icon-milk {
+  > div {
+    width: 288px;
+    height: 52px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-apples {
+  > div {
+    width: 317px;
+    height: 52px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-heart {
+  > div {
+    width: 288px;
+    height: 52px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+
+.made-section__group-icons img{
+  animation: rotate_icon 2s infinite linear;
+}
+
+.made-section__background-milk img:hover{
+  animation: rotate_icon 5s  linear;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .made-section {
+  height: 1250px;
+  left: 0px;
+  top: 1717px;
+  background: $ice__primary-ligh;
+  gap: 0px
+}
+
+
+.made-section__background-milk {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  background-image: none;
+  display: flex;
+  gap: 100px;
+}
+.made-section__background-milk {
+  & img {
+    max-width: 336px !important;
+    max-height: 335px !important;
+  }
+}
+.made-section__main_text {
+  gap:35px;
+  
+}
+.made-section__tex-black {
+  margin-top: 0px;
+  width: 100%;
+  max-height: 79px;
+  font-size: 14px;
+
+}
+
+.made-section__tex-grays {
+  width: 100%;
+  font-size: 14px;
+}
+
+.made-section__group-icons {
+margin-top: 60px;
+margin-left: 50px;
+width: 77%;
+gap: 50px;
+}
+
+.made-section__icon-milk {
+  & img {
+    width: 33px;
+    height: 50px;
+  }
+}
+.made-section__icon-apples {
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.made-section__icon-heart {
+  & img {
+    width: 44px;
+    height: 50px;
+  }
+}
+
+.made-section__icon-milk {
+  & h2 {
+    width: 98px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-apples {
+  & h2 {
+    width: 147px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-heart {
+  & h2 {
+    width: 77px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+
+.made-section__icon-milk {
+  & div {
+    width: 180px;
+    height: 71px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-apples {
+  & div {
+    width: 162px;
+    height: 67px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-heart {
+  & div {
+    width: 159px;
+    height: 67px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+
+}
+
+
+@media screen and (max-width: 767px){
+   .made-section {
+  height: 1941px;
+  width: 100%;
+  left: 0px;
+  top: 1717px;
+  background: $ice__primary-ligh;
+  
+}
+
+.made-section {
+  > h3 {
+    max-width: 198px;
+    height: 21px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.made-section {
+  > h2 {
+    max-width: 100px;
+    height: 76px;
+    font-size: 34px;
+    line-height: 39px;
+  }
+}
+
+
+.made-section__background-milk {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  background-image: none;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.made-section__background-milk {
+
+  
+  & img {
+    max-width: 336px !important;
+    max-height: 335px !important;
+  }
+}
+.made-section__main_text {
+  gap:35px;
+  max-width:334px;
+}
+.made-section__tex-black {
+  width: 100%;
+  max-height: 79px;
+  font-size: 14px;
+
+}
+
+.made-section__tex-grays {
+  width: 100%;
+  font-size: 14px;
+}
+
+.made-section__group-icons {
+margin-top: 60px;
+width: 100%;
+gap: 73px;
+flex-wrap: wrap;
+}
+
+.made-section__icon-milk {
+  & img {
+    width: 33px;
+    height: 50px;
+  }
+}
+.made-section__icon-apples {
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.made-section__icon-heart {
+  & img {
+    width: 44px;
+    height: 50px;
+  }
+}
+
+.made-section__icon-milk {
+  & h2 {
+    width: 98px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41.22px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-apples {
+  & h2 {
+    width: 147px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41.22px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+.made-section__icon-heart {
+  & h2 {
+    width: 77px;
+    height: 56px;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41.22px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    color: $ice__secundary;
+  }
+}
+
+.made-section__icon-milk {
+  & div {
+    width: 230px;
+    height: 36px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-apples {
+  & div {
+    width: 230px;
+    height: 36px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+}
+.made-section__icon-heart {
+  & div {
+    width: 230px;
+    height: 36px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 0.02em;
+    color: $ice_black;
+  }
+} 
+}
