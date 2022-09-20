@@ -334,7 +334,7 @@ footer {
       flex-wrap: wrap;
         gap: 32px;
         & .location-card{
-        max-width:280px;
+        min-width:100%;
         max-height: 600px;        
 
       }
