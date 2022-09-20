@@ -14,10 +14,10 @@
         border-radius: 25px;
         border: 2px solid $ice__secundary;
         background-color: $ice__primary_dark;
-        
+        position: relative;
         & span{
             position: absolute;
-            left: 95%;
+            left: 92%;
             top:2%;
             color: $ice__secundary;
             cursor: pointer;
