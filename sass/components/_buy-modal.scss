@@ -1,10 +1,10 @@
 .buy-modal{
     display: flex;
     z-index: 10;
-    position: absolute;
-    top: -440%;
+    position: fixed;
+    top: 0%;
     width: 100%;
-    min-height: 1000vh;
+    min-height: 100vh;
      background-color: rgba(212, 20, 68, 0.733);
      backdrop-filter: blur(10px);
     .buy-modal-container{
@@ -14,7 +14,7 @@
         border-radius: 25px;
         border: 2px solid $ice__secundary;
         background-color: $ice__primary_dark;
-        position: relative;
+        
         & span{
             position: absolute;
             left: 95%;
@@ -70,6 +70,60 @@
             border: 2px solid $ice__secundary;
         }
         }
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+    .buy-modal{
+        top: -15%;
+        max-height: 100vh;
+    }
+        .buy-modal-container{
+         
+        gap:0px;
+        position: relative;
+        box-sizing:border-box;
+        min-width: 430px;
+        max-height: 600px;
+
+    form{
+            min-width: 100%;
+            min-height: 100%;
+            box-sizing:border-box;
+            & .buy-contact-info{
+                min-width: 100%;
+            }
+            & .center-left{
+                width: 100%;
+                gap:20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & textarea{
+                width: 80%;
+                height: 10vh;
+
+            }
+    }
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+        .buy-modal-container{
+
+        min-width: 100%;
+        max-height: 100%;
+
+        form{
+                min-width: 100%;
+                min-height: 100%;
+
+        }
+
     }
 
 }
