@@ -14,10 +14,10 @@
         border-radius: 25px;
         border: 2px solid $ice__secundary;
         background-color: $ice__primary_dark;
-        
+        position: relative;
         & span{
             position: absolute;
-            left: 95%;
+            left: 92%;
             top:2%;
             color: $ice__secundary;
             cursor: pointer;
@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 1279px) {
     .buy-modal{
-        top: -10%;
+        top: 0%;
         max-height: 100vh;
     }
         .buy-modal-container{
