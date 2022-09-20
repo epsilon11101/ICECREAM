@@ -4,7 +4,9 @@ function createBubble() {
   var size = Math.random() * 60;
   createElement.style.width = 10 + size + "px";
   createElement.style.height = 10 + size + "px";
-  createElement.style.left = Math.random() * innerWidth + "px";
+
+  createElement.style.left = Math.random() * (innerWidth - 30) + "px";
+
   bub_section[0].appendChild(createElement);
 
   setTimeout(() => {
