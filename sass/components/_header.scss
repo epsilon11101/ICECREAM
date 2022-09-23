@@ -190,6 +190,10 @@ header{
         }
     }
 
+    & .header2{
+        display: none;
+    }
+
     & .bubbles{
 
         position: relative;
@@ -225,7 +229,9 @@ header{
 
     }
 
-
+main .hero{
+    display: none;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -486,6 +492,9 @@ header{
         top: 300px;
     }
     }
+    main .hero{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -679,10 +688,185 @@ header{
         top: 380px;
     }
     }
+main .hero{
+    display: none;
+}
+}
+
+
+@media screen and (min-width: 1280px) {
+   header{
+    max-width: 100%;
+    min-height: 70px;
+    .header2{
+        display: flex;
+        max-width: 100%;
+        min-height: 70px;
+        & nav{
+        position: relative;
+            z-index: 2;
+            padding-top: 15px;
+            & ul{
+                gap: 180px;
+                & li:nth-child(2){
+                    & ul{
+                        gap: 35px;
+                    }
+                }
+                & li:last-child input{
+                    width: 159px;
+                    height: 44px;
+                    font-weight: 700;
+                    line-height: 20.83px;
+                    font-size: 16px
+                }
+            }
+        }
+
+} 
+ .hero-body{
+    display: none;
+ }
+ .nav-hero{
+    display: none;
+ }
 
 }
 
+main .hero{
+    background-color: $ice__primary;
+    max-width: 100%;
+    max-height: 594px;
+    display: flex;
+    & .hero-row{
+        max-width: 100%;
+        margin: auto 30px;
+        & .hero-col-6{
+            min-width: 30%;
+            max-height: 100%;
+            & .brand{
+                gap: 64px;
+                width: 100%;
+                & .brand-text{
+                    max-width: 277px;
+                    max-height: 137px;
+
+                    & p{
+                        font-family: $ice__main_font;
+                        color: $ice__white;
+                        font-size: 38px;
+                    }
+                    & span{
+                        color: $ice__secundary;
+                        font-size: 58px;
+                    }
+                }
+
+                & .brand-buttons{
+                    min-width: 277px;
+                    max-height: 137px;
+                    gap: 12px;
+                    & button{
+                        border-radius: 20px;
+                        height: 40px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    & button:first-child{
+                        width: 107px;
+                        color: $ice__white;
+                        background-color: $ice__secundary;
+                    }
+                    & button:last-child{
+                        width: 138px;
+                        color: $ice__secundary;
+                        background-color: $ice__white;
+                    }
+                }
+            }
+
+            & .recipe{
+                max-width: 100%;
+                & .recipe__description{
+                    font-size: 14px;
+                    gap: 1px;
+                    & picture{
+                        cursor: pointer;
+                    }
+                }
+            
+            }
+
+        }
+        & .hero-col-4{
+            min-width: 50%;
+            max-height: 100%;
+
+            & picture{
+                position: relative;
+                z-index: 1;
+            }
+            & picture::after{
+                content:'';
+                z-index: -1;
+                position: absolute;
+                left: -50%;
+                top: -6%;
+                display: inline-block;
+                min-width: 500px;
+                min-height: 500px;
+                background-color: $ice__primary-dark;
+                border-radius: 50%;
+            }
+        }
+        & .hero-col-2{
+            min-width: 20%;
+            min-height: 100%;
+            gap: 180px;
+
+            & .text-container{
+
+                gap: 35px;
+                width: 100%;
+                & .text{
+                min-width: 72px;
+                max-height: 58px;
+                text-align: left;
+                
+
+                & p:first-child{
+                    font-family: $ice__main_font;
+                    font-size: 46px;
+                    color:$ice__secundary;
+                    display: inline;
+                    position: relative;
+                    z-index: 1;
+                    &::after{
+                        content:'';
+                        min-width:30px;
+                        min-height: 30px;
+                        display: inline-block;
+                        background-color: $ice__white;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 70%;
+                        z-index: -1;
+                            }
+                         }
+
+                }
+
+                    
+            }
+
+
+        }
+    }
+}
+}
 .hide-menu{
         display: none;
     }
+
+
 
