@@ -229,9 +229,9 @@ header{
 
     }
 
-main .hero{
-    display: none;
-}
+    main .hero{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -698,6 +698,12 @@ main .hero{
    header{
     max-width: 100%;
     min-height: 70px;
+    &  .nav-mobile-hero{
+        display: none;
+    }
+    & .mobile-menu{
+        display: none;
+    }
     .header2{
         display: flex;
         max-width: 100%;
