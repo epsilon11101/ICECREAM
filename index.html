@@ -672,36 +672,7 @@
     <div class="footer__foot">
       <div class="center location__button">
         <input type="button" class="effect-up button-dark" value="Our Locations >" id="location_btn" />
-
         <input type="button" class="effect-up button-light" value="Franchise >" id="franchise_btn" />
-        <div class="franchise-modal center-column hidde-buy">
-          <div class="franchise-container center-left">
-            <span><i class="fa-solid fa-xmark"></i></span>
-            <p class="title-franchise">Leave your details, and maybe we will call you back</p>
-            <label class="">
-              <p>Name</p>
-              <input type="text" name="name" />
-            </label>
-            <label class="">
-              <p>Number</p>
-              <input type="tel" name="number" />
-            </label>
-            <label class="">
-              <p>Email</p>
-              <input type="text" name="email" />
-            </label>
-            <label class="">
-              <p>A few words, my darling</p>
-              <textarea name="feedback" rows="7" placeholder="Write here"></textarea>
-            </label>
-
-            <div class="center">
-              <input type="submit" class="effect-up button-light" value="Send" />
-            </div>
-
-
-          </div>
-        </div>
       </div>
 
       <div class="container footerbody space ">
@@ -740,7 +711,7 @@
 
 
 
-    <section class="location-modal center-column ">
+    <section class="location-modal center-column hidde-buy">
       <div class="location-container container center-column">
         <span><i class="fa-solid fa-xmark"></i></span>
         <p>We will be glad to see you</p>
@@ -754,6 +725,38 @@
         </div>
 
         <input type="button" class="effect-up button-light" value="Open in Google Maps" />
+
+      </div>
+    </section>
+    <section class="franchise-modal center-column hidde-buy">
+
+      <div class="franchise-container">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <p class="title-franchise">Leave your details, and maybe we will call you back</p>
+        <form action="">
+          <div class="label-container center">
+            <label class="center">
+              <p>Name</p>
+              <input type="text" name="name" />
+            </label>
+            <label class="center">
+              <p>Tel</p>
+              <input type="tel" name="number" />
+            </label>
+            <label class="center">
+              <p>Email</p>
+              <input type="text" name="email" />
+            </label>
+          </div>
+
+          <label class="center-column">
+            <p>A few words, my darling</p>
+            <textarea name="feedback" rows="7" placeholder="Write here"></textarea>
+          </label>
+          <div class="center">
+            <input type="submit" class="effect-up button-light" value="Send" />
+          </div>
+        </form>
 
       </div>
     </section>
