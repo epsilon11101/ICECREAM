@@ -1,4 +1,5 @@
 let buy_button = document.getElementById("buy-btn");
+let buy_button2 = document.getElementById("buy-btn2");
 let buy_button_tablet = document.getElementById("buy-btn-tablet");
 let buy_modal = document.getElementsByClassName("buy-modal");
 let close_button = document.querySelector(".buy-modal  .fa-xmark");
@@ -11,6 +12,7 @@ let closeModalFranchise = () =>
   franchise_modal[0].classList.toggle("hidde-buy");
 
 buy_button.addEventListener("click", closeModal);
+buy_button2.addEventListener("click", closeModal);
 buy_button_tablet.addEventListener("click", closeModal);
 close_button.addEventListener("click", closeModal);
 send_button.addEventListener("click", closeModal);
