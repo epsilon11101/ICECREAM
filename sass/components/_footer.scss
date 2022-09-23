@@ -204,9 +204,13 @@ footer {
   
   & .passion{
     display: inline-block;
-    & span:hover{
-      font-size: 30px;
+    & span {
+      display: inline-block;
+      transition: all 0.1s ease;
       cursor: pointer;
+    }
+    & span:hover{
+      transform: scale(1.3);
     
   }
 
