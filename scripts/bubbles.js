@@ -1,11 +1,14 @@
 function createBubble() {
   const bub_section = document.getElementsByClassName("bubbles");
   const createElement = document.createElement("span");
-  var size = Math.random() * 60;
-  createElement.style.width = 10 + size + "px";
-  createElement.style.height = 10 + size + "px";
+  let size = Math.random() * 30;
+  createElement.style.width = size + "px";
+  createElement.style.height = size + "px";
 
-  createElement.style.left = Math.random() * (innerWidth - 30) + "px";
+  let pos = Math.random() * (document.documentElement.clientWidth - 100);
+
+  console.log(document.documentElement.clientWidth, pos);
+  createElement.style.left = pos + "px";
 
   bub_section[0].appendChild(createElement);
 
